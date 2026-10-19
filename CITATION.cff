@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "The Agent Economy: open dataset"
+abstract: "Open dataset behind The Agent Economy directory: agent payment rails, protocols, identity, governance, frameworks. CC BY 4.0."
+authors:
+  - name: "The Agent Economy"
+    website: "https://theagenteconomy.si"
+  - family-names: "Curnin"
+    given-names: "Max"
+license: CC-BY-4.0
+url: "https://theagenteconomy.si"
+repository: "https://github.com/lazaruseth/agent-economy-data"
+date-released: "2026-10-19"
+keywords:
+  - agent-economy
+  - ai-agents
+  - agent-payments
+  - x402
+  - dataset
