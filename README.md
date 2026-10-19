@@ -10,7 +10,7 @@ The site code is not in this repository. Only the data is published.
 
 - Canonical source: https://theagenteconomy.si
 - Live export: https://theagenteconomy.si/data/listings.json
-- The directory is checked daily. This repository is refreshed from the live site after each published update, so it can trail the site by up to one day.
+- The site is checked on a regular schedule. This repository is not updated automatically. A maintainer syncs it by hand from the live export with a script, after published updates, so it can trail the site.
 - Every record carries its own `last_verified` or `checked` date. Use those dates, not the commit date, to judge freshness.
 
 ## Files
@@ -53,7 +53,7 @@ Each item in `listings`:
 | `slug` | string | Listing slug. |
 | `claimed` | `"UNKNOWN"` or object[] | Figures the vendor states about itself. |
 | `measured` | `"UNKNOWN"` or object[] | Figures from an independent source, such as an onchain dashboard or package registry. |
-| `notes` | string[] | Scope caveats, for example a figure that covers a whole network rather than this product. |
+| `notes` | object[] | Scope caveats and context, for example a figure that covers a whole network rather than this product. Each note has `text`, `source_url`, `source_title`, and `date`. |
 | `checked` | date | Last day the sources were checked. |
 
 Each figure object has `metric`, `value`, `as_of`, `source_url`, `source_title`, `checked`, and, for measured figures, `measured_by`. On the site, `UNKNOWN` is shown as "None published".
@@ -70,13 +70,13 @@ A list of `{ "a": slug, "b": slug }` pairs. Each pair has a page at `https://the
 
 ### `data/glossary.json`
 
-Each term has `slug`, `term`, `definition`, `source` (`title`, `url`), `listings` (related listing slugs), `related` (related term slugs), and `last_verified`.
+Each term has `slug`, `term`, `definition`, `source` (`title`, `url`), `more_sources` (extra `title`, `url` pairs, when present), `listings` (related listing slugs), `related` (related term slugs), and `last_verified`.
 
 ## Corrections
 
 Open an issue or a pull request. Every correction needs a public source URL that states the fact, plus the date you checked it. Vendor statements are recorded as claimed figures, and independent measurements as measured figures. A correction without a source is not merged, and a cell without a source stays `UNKNOWN`.
 
-Accepted corrections are applied to the site first, then synced back here.
+Accepted corrections are applied to the site first, then synced back here at the next manual sync.
 
 ## Neutrality and disclosure
 

@@ -106,9 +106,9 @@
     "claimed": "UNKNOWN",
     "measured": [
       {
-        "metric": "npm downloads of @stripe/link-cli, 2026-09-19 to 2026-10-18",
+        "metric": "npm downloads, not users, of @stripe/link-cli from 2026-09-19 to 2026-10-18",
         "value": "86,937",
-        "as_of": null,
+        "as_of": "2026-10-18",
         "source_url": "https://api.npmjs.org/downloads/point/last-month/@stripe/link-cli",
         "source_title": "npm downloads API, last month",
         "measured_by": "npm",
@@ -136,37 +136,37 @@
     "slug": "x402",
     "claimed": [
       {
-        "metric": "Transactions, labeled Last 30 Days",
+        "metric": "Transactions, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
         "value": "75.41M",
         "as_of": null,
-        "source_url": "https://x402.org",
+        "source_url": "https://x402.org/",
         "source_title": "x402.org Last 30 Days panel",
         "measured_by": "x402",
         "checked": "2026-10-19"
       },
       {
-        "metric": "Volume, labeled Last 30 Days",
+        "metric": "Volume, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
         "value": "$24.24M",
         "as_of": null,
-        "source_url": "https://x402.org",
+        "source_url": "https://x402.org/",
         "source_title": "x402.org Last 30 Days panel",
         "measured_by": "x402",
         "checked": "2026-10-19"
       },
       {
-        "metric": "Buyers, labeled Last 30 Days",
+        "metric": "Buyers, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
         "value": "94.06K",
         "as_of": null,
-        "source_url": "https://x402.org",
+        "source_url": "https://x402.org/",
         "source_title": "x402.org Last 30 Days panel",
         "measured_by": "x402",
         "checked": "2026-10-19"
       },
       {
-        "metric": "Sellers, labeled Last 30 Days",
+        "metric": "Sellers, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
         "value": "22K",
         "as_of": null,
-        "source_url": "https://x402.org",
+        "source_url": "https://x402.org/",
         "source_title": "x402.org Last 30 Days panel",
         "measured_by": "x402",
         "checked": "2026-10-19"
@@ -177,7 +177,7 @@
         "metric": "Transactions, past 30 days",
         "value": "3.02M",
         "as_of": null,
-        "source_url": "https://x402scan.com",
+        "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
         "checked": "2026-10-19"
@@ -186,7 +186,7 @@
         "metric": "Volume, past 30 days",
         "value": "$1.22M",
         "as_of": null,
-        "source_url": "https://x402scan.com",
+        "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
         "checked": "2026-10-19"
@@ -195,16 +195,16 @@
         "metric": "Buyers, past 30 days",
         "value": "36.24K",
         "as_of": null,
-        "source_url": "https://x402scan.com",
+        "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
         "checked": "2026-10-19"
       },
       {
-        "metric": "Sellers, past 30 days",
+        "metric": "Sellers, past 30 days, higher than the x402.org panel figure of 22K, and not re-read from a static fetch of the client rendered page",
         "value": "38K",
         "as_of": null,
-        "source_url": "https://x402scan.com",
+        "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
         "checked": "2026-10-19"
@@ -218,10 +218,16 @@
         "date": "2026-09-27"
       },
       {
-        "text": "ChainWard says the x402.org Last 30 Days panel matches an Internet Archive capture from 2026-04-17, including 75.41M transactions and $24.24M.",
+        "text": "ChainWard says the x402.org Last 30 Days panel appears unchanged since an April 17 2026 archive capture, including the transaction, volume, buyer, and seller figures.",
         "source_url": "https://chainward.ai/decodes/x402-on-base",
         "source_title": "ChainWard, x402 on Base, one week on chain",
         "date": "2026-09-27"
+      },
+      {
+        "text": "x402scan states 38K sellers while the x402.org panel states 22K sellers. The two counts may use different definitions or windows. A static fetch of x402scan does not show the figure, so this measured seller count is kept only with that caveat.",
+        "source_url": "https://www.x402scan.com/",
+        "source_title": "x402scan overall stats",
+        "date": "2026-10-19"
       }
     ],
     "checked": "2026-10-19"

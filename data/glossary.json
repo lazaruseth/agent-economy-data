@@ -65,7 +65,7 @@
     "definition": "A wallet an agent can use to discover paid services and pay under a cap the operator set. Tempo Wallet lets an agent preview Machine Payments Protocol terms and pay under a max spend cap.",
     "source": {
       "title": "Tempo Wallet agent documentation",
-      "url": "https://tempo.xyz/developers/docs/wallet/use-with-agents"
+      "url": "https://tempo.xyz/developers/docs/wallet/recipes"
     },
     "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli"],
     "related": ["kyapay", "machine-payments-protocol", "spend-limit"],
@@ -122,14 +122,20 @@
   {
     "slug": "content-addressed-proof",
     "term": "Content-addressed proof",
-    "definition": "A CLP proof bundle that binds signatures, authorization, and payment events into a content-addressed record for an asset or capacity transaction.",
+    "definition": "A record identified by a hash of its bytes, so a reader can check that those bytes match the identifier. Merkle proofs show membership in a larger hashed set. IPFS content identifiers are a common form. Accords is one listing that uses this for a transaction record, not the only use.",
     "source": {
-      "title": "Accords OS and CLP",
-      "url": "https://www.accords.ai/rail"
+      "title": "IPFS content identifiers",
+      "url": "https://docs.ipfs.tech/concepts/content-addressing/"
     },
+    "more_sources": [
+      {
+        "title": "IPFS Merkle directed acyclic graphs",
+        "url": "https://docs.ipfs.tech/concepts/merkle-dag/"
+      }
+    ],
     "listings": ["accords"],
     "related": [],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-10-19"
   },
   {
     "slug": "did",
@@ -137,7 +143,7 @@
     "definition": "A URI that associates a subject with a DID document. The controller can prove control without permission from a centralized registry, identity provider, or certificate authority.",
     "source": {
       "title": "W3C Decentralized Identifiers v1.0",
-      "url": "https://www.w3.org/TR/did-core/"
+      "url": "https://www.w3.org/TR/did/"
     },
     "listings": ["anp"],
     "related": ["agent-identity", "erc-8004"],
@@ -185,7 +191,7 @@
     "definition": "HTTP status code 402, Payment Required. RFC 9110 reserves the code for future use. x402, L402, and the Machine Payments Protocol use a 402 response as the signal that the request needs payment.",
     "source": {
       "title": "RFC 9110, status 402 Payment Required",
-      "url": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.3"
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
     "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli"],
     "related": ["l402", "machine-payments-protocol", "x402"],
@@ -269,7 +275,7 @@
     "definition": "More than one agent collaborating under a runtime. CrewAI pairs event driven Flows for control flow with Crews of role based agents that share a delegated task.",
     "source": {
       "title": "CrewAI introduction",
-      "url": "https://docs.crewai.com/introduction"
+      "url": "https://docs.crewai.com/v1.15.28/en/introduction"
     },
     "listings": ["crewai", "google-adk", "microsoft-agent-framework"],
     "related": ["human-approval", "tool-call"],
@@ -293,7 +299,7 @@
     "definition": "A service that verifies a payment and settles it for the seller. In x402 the server asks the facilitator to verify, does the work, then asks the facilitator to settle.",
     "source": {
       "title": "Coinbase documentation for how x402 works",
-      "url": "https://docs.cdp.coinbase.com/x402/core-concepts/how-it-works"
+      "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
     "listings": ["x402", "nevermined"],
     "related": ["x402"],
@@ -305,7 +311,7 @@
     "definition": "Draft protocol for a company to publish how a personal agent may sign in and act on a person's account, using OAuth, OpenAPI, and MCP.",
     "source": {
       "title": "Personal Agent Protocol overview",
-      "url": "https://personalagentprotocol.org/docs/overview"
+      "url": "https://personalagentprotocol.org/docs/introduction"
     },
     "listings": ["personal-agent-protocol"],
     "related": ["mcp", "pact"],
@@ -317,7 +323,7 @@
     "definition": "Software that returns a decision from policy code, separate from the application that enforces it. Open Policy Agent evaluates structured input against Rego policy.",
     "source": {
       "title": "Open Policy Agent documentation",
-      "url": "https://www.openpolicyagent.org/docs/latest/"
+      "url": "https://www.openpolicyagent.org/docs"
     },
     "listings": ["open-policy-agent", "invariant"],
     "related": ["guardrail"],
@@ -377,7 +383,7 @@
     "definition": "Open standard for per request HTTP payments. The server quotes a price, the client sends the request again with proof of payment, and a facilitator can verify and settle it.",
     "source": {
       "title": "Coinbase documentation for how x402 works",
-      "url": "https://docs.cdp.coinbase.com/x402/core-concepts/how-it-works"
+      "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
     "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments"],
     "related": ["http-402", "payment-facilitator"],
