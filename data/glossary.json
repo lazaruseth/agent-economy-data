@@ -1,0 +1,386 @@
+[
+  {
+    "slug": "a2a",
+    "term": "A2A",
+    "definition": "Open protocol, hosted by the Linux Foundation, for agents to discover each other through Agent Cards and collaborate over HTTP. Requests and responses use JSON-RPC 2.0.",
+    "source": {
+      "title": "A2A core concepts",
+      "url": "https://a2a-protocol.org/latest/topics/key-concepts/"
+    },
+    "listings": ["a2a", "pact", "ap2", "ucp", "gensyn"],
+    "related": ["agent-card", "agntcy", "ap2", "json-rpc", "pact", "ucp"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "agent-card",
+    "term": "Agent Card",
+    "definition": "JSON document in A2A that lists an agent's identity, capabilities, endpoint, skills, and authentication requirements so a client can decide how to call it.",
+    "source": {
+      "title": "A2A core concepts",
+      "url": "https://a2a-protocol.org/latest/topics/key-concepts/"
+    },
+    "listings": ["a2a"],
+    "related": ["a2a"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "agent-identity",
+    "term": "Agent identity",
+    "definition": "An identity created for an agent so access policy, risk checks, and audit logs can apply to it. Microsoft Entra Agent ID creates these identities from blueprints.",
+    "source": {
+      "title": "Overview of agent identities in Microsoft Entra",
+      "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-identities"
+    },
+    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol"],
+    "related": ["agntcy", "did", "erc-8004", "kyapay", "web-bot-auth"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "agent-mandate",
+    "term": "Agent mandate",
+    "definition": "Signed credential in AP2. A checkout mandate records the cart negotiated with the merchant. A payment mandate authorizes a payment instrument against that checkout.",
+    "source": {
+      "title": "AP2 protocol documentation",
+      "url": "https://ap2-protocol.org/"
+    },
+    "listings": ["ap2"],
+    "related": ["ap2"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "agent-marketplace",
+    "term": "Agent marketplace",
+    "definition": "A market where an agent can hire a specialized agent for a task and pay for the work, or list its own service for other agents to hire.",
+    "source": {
+      "title": "Olas Mech Marketplace",
+      "url": "https://olas.network/mech-marketplace"
+    },
+    "listings": ["olas-mech-marketplace", "virtuals-protocol"],
+    "related": ["compute-marketplace"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "agent-wallet",
+    "term": "Agent wallet",
+    "definition": "A wallet an agent can use to discover paid services and pay under a cap the operator set. Tempo Wallet lets an agent preview Machine Payments Protocol terms and pay under a max spend cap.",
+    "source": {
+      "title": "Tempo Wallet agent documentation",
+      "url": "https://tempo.xyz/developers/docs/wallet/use-with-agents"
+    },
+    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli"],
+    "related": ["kyapay", "machine-payments-protocol", "spend-limit"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "agentic-commerce-protocol",
+    "term": "Agentic Commerce Protocol",
+    "definition": "Open standard for an agent to browse a catalog, run a checkout session, and pass a delegated payment to a business.",
+    "source": {
+      "title": "Stripe documentation for the Agentic Commerce Protocol",
+      "url": "https://docs.stripe.com/agentic-commerce/protocols/acp"
+    },
+    "listings": ["agentic-commerce-protocol"],
+    "related": ["ucp"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "agntcy",
+    "term": "AGNTCY",
+    "definition": "Open stack, hosted by the Linux Foundation, for cross vendor agent discovery, identity, messaging, and observability.",
+    "source": {
+      "title": "AGNTCY project site",
+      "url": "https://agntcy.org/"
+    },
+    "listings": ["agntcy"],
+    "related": ["a2a", "agent-identity"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "ap2",
+    "term": "AP2",
+    "definition": "Open payment extension for A2A and the Universal Commerce Protocol. It records checkout and payment authorization as signed mandates. Public samples exist while FIDO continues the standards work.",
+    "source": {
+      "title": "AP2 protocol documentation",
+      "url": "https://ap2-protocol.org/"
+    },
+    "listings": ["ap2"],
+    "related": ["a2a", "agent-mandate", "machine-payments-protocol", "ucp"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "compute-marketplace",
+    "term": "Compute marketplace",
+    "definition": "A market where independent providers offer compute for workloads. Akash Network documents providers bidding to host those workloads.",
+    "source": {
+      "title": "Akash Network introduction",
+      "url": "https://akash.network/docs/getting-started/what-is-akash/"
+    },
+    "listings": ["akash-network", "render-network", "gensyn"],
+    "related": ["agent-marketplace", "digital-commodity"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "content-addressed-proof",
+    "term": "Content-addressed proof",
+    "definition": "A CLP proof bundle that binds signatures, authorization, and payment events into a content-addressed record for an asset or capacity transaction.",
+    "source": {
+      "title": "Accords OS and CLP",
+      "url": "https://www.accords.ai/rail"
+    },
+    "listings": ["accords"],
+    "related": [],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "did",
+    "term": "Decentralized identifier",
+    "definition": "A URI that associates a subject with a DID document. The controller can prove control without permission from a centralized registry, identity provider, or certificate authority.",
+    "source": {
+      "title": "W3C Decentralized Identifiers v1.0",
+      "url": "https://www.w3.org/TR/did-core/"
+    },
+    "listings": ["anp"],
+    "related": ["agent-identity", "erc-8004"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "digital-commodity",
+    "term": "Digital commodity",
+    "definition": "Work product of an open network where independent subnets produce digital commodities and the chain pays contributors.",
+    "source": {
+      "title": "Bittensor site",
+      "url": "https://www.bittensor.com/"
+    },
+    "listings": ["bittensor"],
+    "related": ["compute-marketplace"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "erc-8004",
+    "term": "ERC-8004",
+    "definition": "Draft Ethereum proposal for three registries: an ERC-721 identity that points at an agent registration file, a reputation registry, and a validation registry.",
+    "source": {
+      "title": "ERC-8004 Trustless Agents",
+      "url": "https://eips.ethereum.org/EIPS/eip-8004"
+    },
+    "listings": ["erc-8004"],
+    "related": ["agent-identity", "did"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "guardrail",
+    "term": "Guardrail",
+    "definition": "Programmable check that can block, alter, or validate user input, model output, or a tool call. NeMo Guardrails runs these checks as rails around an LLM application.",
+    "source": {
+      "title": "NVIDIA NeMo Guardrails overview",
+      "url": "https://docs.nvidia.com/nemo/guardrails/about-nemo-guardrails-library/overview"
+    },
+    "listings": ["guardrails-ai", "invariant", "lakera-guard", "nemo-guardrails", "strands-agents", "openai-agents-sdk", "mastra", "pydantic-ai", "litellm"],
+    "related": ["human-approval", "policy-engine", "tool-call"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "http-402",
+    "term": "HTTP 402",
+    "definition": "HTTP status code 402, Payment Required. RFC 9110 reserves the code for future use. x402, L402, and the Machine Payments Protocol use a 402 response as the signal that the request needs payment.",
+    "source": {
+      "title": "RFC 9110, status 402 Payment Required",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.3"
+    },
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli"],
+    "related": ["l402", "machine-payments-protocol", "x402"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "human-approval",
+    "term": "Human approval",
+    "definition": "A pause where a person inspects or changes agent state before the run continues. LangGraph provides this inside the graph.",
+    "source": {
+      "title": "LangGraph overview",
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+    },
+    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra"],
+    "related": ["guardrail", "multi-agent", "tool-call"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "json-rpc",
+    "term": "JSON-RPC",
+    "definition": "Stateless remote procedure call protocol. A request is a JSON object naming a method, with optional parameters and an id, and the server returns a JSON result or error.",
+    "source": {
+      "title": "JSON-RPC 2.0 specification",
+      "url": "https://www.jsonrpc.org/specification"
+    },
+    "listings": ["a2a", "mcp"],
+    "related": ["a2a", "mcp"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "kyapay",
+    "term": "KYAPay",
+    "definition": "Signed token from Skyfire that binds an agent identity to a payment the buyer has committed. The seller charges the token after delivery.",
+    "source": {
+      "title": "Skyfire KYAPay token documentation",
+      "url": "https://docs.skyfire.xyz/docs/kyapay-tokens"
+    },
+    "listings": ["skyfire"],
+    "related": ["agent-identity", "agent-wallet"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "l402",
+    "term": "L402",
+    "definition": "HTTP 402 flow from Lightning Labs. The server returns a macaroon and a Lightning invoice. The client pays, then presents the preimage so the server can check payment without a lookup.",
+    "source": {
+      "title": "Lightning Labs L402 documentation",
+      "url": "https://docs.lightning.engineering/the-lightning-network/l402"
+    },
+    "listings": ["l402"],
+    "related": ["http-402"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "machine-payments-protocol",
+    "term": "Machine Payments Protocol",
+    "definition": "Open HTTP 402 protocol, co-authored by Stripe and Tempo, so an agent can authorize payment for an API with a card or a stablecoin and receive a receipt.",
+    "source": {
+      "title": "Stripe documentation for MPP",
+      "url": "https://docs.stripe.com/payments/machine/mpp"
+    },
+    "listings": ["mpp", "tempo-wallet", "nevermined"],
+    "related": ["agent-wallet", "ap2", "http-402"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "mcp",
+    "term": "Model Context Protocol",
+    "definition": "Open protocol that connects an LLM application to external tools, resources, and prompts. Hosts, clients, and servers exchange JSON-RPC 2.0 messages.",
+    "source": {
+      "title": "Model Context Protocol specification",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28"
+    },
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn"],
+    "related": ["json-rpc", "personal-agent-protocol", "tool-call", "ucp"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "multi-agent",
+    "term": "Multi agent",
+    "definition": "More than one agent collaborating under a runtime. CrewAI pairs event driven Flows for control flow with Crews of role based agents that share a delegated task.",
+    "source": {
+      "title": "CrewAI introduction",
+      "url": "https://docs.crewai.com/introduction"
+    },
+    "listings": ["crewai", "google-adk", "microsoft-agent-framework"],
+    "related": ["human-approval", "tool-call"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "pact",
+    "term": "PACT",
+    "definition": "Protocol on A2A 1.0 that lets a personal agent sign its requests and act for a user only inside scopes that user approved with a brand.",
+    "source": {
+      "title": "PACT protocol overview",
+      "url": "https://openpactprotocol.org/"
+    },
+    "listings": ["pact"],
+    "related": ["a2a", "personal-agent-protocol"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "payment-facilitator",
+    "term": "Payment facilitator",
+    "definition": "A service that verifies a payment and settles it for the seller. In x402 the server asks the facilitator to verify, does the work, then asks the facilitator to settle.",
+    "source": {
+      "title": "Coinbase documentation for how x402 works",
+      "url": "https://docs.cdp.coinbase.com/x402/core-concepts/how-it-works"
+    },
+    "listings": ["x402", "nevermined"],
+    "related": ["x402"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "personal-agent-protocol",
+    "term": "Personal Agent Protocol",
+    "definition": "Draft protocol for a company to publish how a personal agent may sign in and act on a person's account, using OAuth, OpenAPI, and MCP.",
+    "source": {
+      "title": "Personal Agent Protocol overview",
+      "url": "https://personalagentprotocol.org/docs/overview"
+    },
+    "listings": ["personal-agent-protocol"],
+    "related": ["mcp", "pact"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "policy-engine",
+    "term": "Policy engine",
+    "definition": "Software that returns a decision from policy code, separate from the application that enforces it. Open Policy Agent evaluates structured input against Rego policy.",
+    "source": {
+      "title": "Open Policy Agent documentation",
+      "url": "https://www.openpolicyagent.org/docs/latest/"
+    },
+    "listings": ["open-policy-agent", "invariant"],
+    "related": ["guardrail"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "spend-limit",
+    "term": "Spend limit",
+    "definition": "A budget on model calls. LiteLLM Proxy enforces personal, team, and agent spend budgets when a database is connected.",
+    "source": {
+      "title": "LiteLLM proxy budgets",
+      "url": "https://docs.litellm.ai/docs/proxy/users"
+    },
+    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments"],
+    "related": ["agent-wallet"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "tool-call",
+    "term": "Tool call",
+    "definition": "A function an MCP server exposes for a model to execute. The MCP specification treats a tool as code execution and says hosts must get explicit user consent before invoking one.",
+    "source": {
+      "title": "Model Context Protocol specification",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28"
+    },
+    "listings": ["mcp", "claude-agent-sdk", "google-adk", "openai-agents-sdk", "smolagents", "strands-agents", "lakera-guard", "nemo-guardrails"],
+    "related": ["guardrail", "human-approval", "mcp", "multi-agent"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "ucp",
+    "term": "Universal Commerce Protocol",
+    "definition": "Open commerce protocol so agents, businesses, and payment providers can negotiate checkout and identity linking over REST, MCP, or A2A.",
+    "source": {
+      "title": "Universal Commerce Protocol specification",
+      "url": "https://ucp.dev/latest/specification/overview/"
+    },
+    "listings": ["ucp", "ap2"],
+    "related": ["a2a", "agentic-commerce-protocol", "ap2", "mcp"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "web-bot-auth",
+    "term": "Web Bot Auth",
+    "definition": "Method for an automated client to sign HTTP requests so a site can verify which bot or agent sent them. The signature rules are still an IETF draft.",
+    "source": {
+      "title": "Cloudflare Web Bot Auth documentation",
+      "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
+    },
+    "listings": ["web-bot-auth", "visa-trusted-agent-protocol"],
+    "related": ["agent-identity"],
+    "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "x402",
+    "term": "x402",
+    "definition": "Open standard for per request HTTP payments. The server quotes a price, the client sends the request again with proof of payment, and a facilitator can verify and settle it.",
+    "source": {
+      "title": "Coinbase documentation for how x402 works",
+      "url": "https://docs.cdp.coinbase.com/x402/core-concepts/how-it-works"
+    },
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments"],
+    "related": ["http-402", "payment-facilitator"],
+    "last_verified": "2026-10-17"
+  }
+]

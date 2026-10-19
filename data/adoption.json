@@ -1,0 +1,229 @@
+[
+  {
+    "slug": "ap2",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "coinbase-agentic-wallet",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "hedera-agent-accounts",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "l402",
+    "claimed": "UNKNOWN",
+    "measured": [
+      {
+        "metric": "Curated L402 API registry size",
+        "value": "4 providers, 36 endpoints",
+        "as_of": "2026-04-01",
+        "source_url": "https://github.com/lightninglabs/lightning-agent-tools/pull/16",
+        "source_title": "docs: add real L402 API examples from LightningFaucet registry",
+        "measured_by": "Lightning Faucet",
+        "checked": "2026-10-19"
+      }
+    ],
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "metamask-agent-wallet",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "mpp",
+    "claimed": "UNKNOWN",
+    "measured": [
+      {
+        "metric": "Transactions since mid March 2026 launch, cumulative raw onchain",
+        "value": "~184,600",
+        "as_of": "2026-04-21",
+        "source_url": "https://www.visa.com/api/image-proxy?path=%2Fcontent%2Fdam%2Fvisa%2Freimagine-visa%2Fthought-leadership%2Fdocuments%2Fagentic-payments-report.pdf",
+        "source_title": "Agentic Payments from the Ground Up (Visa and Artemis)",
+        "measured_by": "Artemis Analytics",
+        "checked": "2026-10-19"
+      },
+      {
+        "metric": "Volume settled since mid March 2026 launch, cumulative raw onchain",
+        "value": "over $38,000",
+        "as_of": "2026-04-21",
+        "source_url": "https://www.visa.com/api/image-proxy?path=%2Fcontent%2Fdam%2Fvisa%2Freimagine-visa%2Fthought-leadership%2Fdocuments%2Fagentic-payments-report.pdf",
+        "source_title": "Agentic Payments from the Ground Up (Visa and Artemis)",
+        "measured_by": "Artemis Analytics",
+        "checked": "2026-10-19"
+      }
+    ],
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "nevermined",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "polygon-agent-cli",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "skyfire",
+    "claimed": [
+      {
+        "metric": "Agentic transactions powered with major consumer web properties",
+        "value": "nearly 2 million",
+        "as_of": "2026-10-02",
+        "source_url": "https://craigdewitt.substack.com/p/the-trust-layer-for-the-agentic-internet",
+        "source_title": "The Trust Layer for the Agentic Internet",
+        "measured_by": "Skyfire",
+        "checked": "2026-10-19"
+      }
+    ],
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "stripe-link-cli",
+    "claimed": "UNKNOWN",
+    "measured": [
+      {
+        "metric": "npm downloads of @stripe/link-cli, 2026-09-19 to 2026-10-18",
+        "value": "86,937",
+        "as_of": null,
+        "source_url": "https://api.npmjs.org/downloads/point/last-month/@stripe/link-cli",
+        "source_title": "npm downloads API, last month",
+        "measured_by": "npm",
+        "checked": "2026-10-19"
+      }
+    ],
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "sui-agentic-payments",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "tempo-wallet",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "x402",
+    "claimed": [
+      {
+        "metric": "Transactions, labeled Last 30 Days",
+        "value": "75.41M",
+        "as_of": null,
+        "source_url": "https://x402.org",
+        "source_title": "x402.org Last 30 Days panel",
+        "measured_by": "x402",
+        "checked": "2026-10-19"
+      },
+      {
+        "metric": "Volume, labeled Last 30 Days",
+        "value": "$24.24M",
+        "as_of": null,
+        "source_url": "https://x402.org",
+        "source_title": "x402.org Last 30 Days panel",
+        "measured_by": "x402",
+        "checked": "2026-10-19"
+      },
+      {
+        "metric": "Buyers, labeled Last 30 Days",
+        "value": "94.06K",
+        "as_of": null,
+        "source_url": "https://x402.org",
+        "source_title": "x402.org Last 30 Days panel",
+        "measured_by": "x402",
+        "checked": "2026-10-19"
+      },
+      {
+        "metric": "Sellers, labeled Last 30 Days",
+        "value": "22K",
+        "as_of": null,
+        "source_url": "https://x402.org",
+        "source_title": "x402.org Last 30 Days panel",
+        "measured_by": "x402",
+        "checked": "2026-10-19"
+      }
+    ],
+    "measured": [
+      {
+        "metric": "Transactions, past 30 days",
+        "value": "3.02M",
+        "as_of": null,
+        "source_url": "https://x402scan.com",
+        "source_title": "x402scan overall stats",
+        "measured_by": "x402scan",
+        "checked": "2026-10-19"
+      },
+      {
+        "metric": "Volume, past 30 days",
+        "value": "$1.22M",
+        "as_of": null,
+        "source_url": "https://x402scan.com",
+        "source_title": "x402scan overall stats",
+        "measured_by": "x402scan",
+        "checked": "2026-10-19"
+      },
+      {
+        "metric": "Buyers, past 30 days",
+        "value": "36.24K",
+        "as_of": null,
+        "source_url": "https://x402scan.com",
+        "source_title": "x402scan overall stats",
+        "measured_by": "x402scan",
+        "checked": "2026-10-19"
+      },
+      {
+        "metric": "Sellers, past 30 days",
+        "value": "38K",
+        "as_of": null,
+        "source_url": "https://x402scan.com",
+        "source_title": "x402scan overall stats",
+        "measured_by": "x402scan",
+        "checked": "2026-10-19"
+      }
+    ],
+    "notes": [
+      {
+        "text": "ChainWard measured one week of x402 on Base, 2026-09-15 through 2026-09-21: $128,977 settled, and at least $56,268 (43.6%) looped back.",
+        "source_url": "https://chainward.ai/decodes/x402-on-base",
+        "source_title": "ChainWard, x402 on Base, one week on chain",
+        "date": "2026-09-27"
+      },
+      {
+        "text": "ChainWard says the x402.org Last 30 Days panel matches an Internet Archive capture from 2026-04-17, including 75.41M transactions and $24.24M.",
+        "source_url": "https://chainward.ai/decodes/x402-on-base",
+        "source_title": "ChainWard, x402 on Base, one week on chain",
+        "date": "2026-09-27"
+      }
+    ],
+    "checked": "2026-10-19"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  { "a": "a2a", "b": "agntcy" },
+  { "a": "a2a", "b": "anp" },
+  { "a": "a2a", "b": "mcp" },
+  { "a": "agentic-commerce-protocol", "b": "ucp" },
+  { "a": "akash-network", "b": "gensyn" },
+  { "a": "akash-network", "b": "render-network" },
+  { "a": "ap2", "b": "mpp" },
+  { "a": "claude-agent-sdk", "b": "openai-agents-sdk" },
+  { "a": "crewai", "b": "langgraph" },
+  { "a": "entra-agent-id", "b": "web-bot-auth" },
+  { "a": "entra-agent-id", "b": "erc-8004" },
+  { "a": "google-adk", "b": "microsoft-agent-framework" },
+  { "a": "guardrails-ai", "b": "nemo-guardrails" },
+  { "a": "invariant", "b": "open-policy-agent" },
+  { "a": "l402", "b": "x402" },
+  { "a": "mpp", "b": "x402" },
+  { "a": "olas-mech-marketplace", "b": "virtuals-protocol" },
+  { "a": "pact", "b": "personal-agent-protocol" },
+  { "a": "pydantic-ai", "b": "smolagents" },
+  { "a": "skyfire", "b": "tempo-wallet" },
+  { "a": "visa-trusted-agent-protocol", "b": "web-bot-auth" }
+]

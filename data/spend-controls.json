@@ -1,0 +1,483 @@
+{
+  "title": "Agent spend controls compared",
+  "updated": "2026-10-19",
+  "rows": [
+    {
+      "product": "Coinbase Agentic Wallet",
+      "listing_slug": "coinbase-agentic-wallet",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/mcp/quickstart",
+        "source_title": "Coinbase Agentic Wallet MCP quickstart",
+        "checked": "2026-10-19",
+        "note": "Wallet UI setting Max per call caps a single payment."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/mcp/quickstart",
+        "source_title": "Coinbase Agentic Wallet MCP quickstart",
+        "checked": "2026-10-19",
+        "note": "Wallet UI setting Max per session caps spending for that session."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Agentic Wallet docs checked do not state a payee or protocol allowlist."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Docs say the agent cannot change the caps. They do not state human approval above a threshold."
+      },
+      "revoke": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Agentic Wallet docs checked do not describe revoking agent spend."
+      },
+      "custody": {
+        "value": "Keys in Coinbase infrastructure",
+        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/cli/welcome",
+        "source_title": "Coinbase Agentic Wallet CLI documentation",
+        "checked": "2026-10-19",
+        "note": "Security section says private keys stay in Coinbase infrastructure."
+      },
+      "rails": {
+        "values": ["x402", "onchain transfer"],
+        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/cli/welcome",
+        "source_title": "Coinbase Agentic Wallet CLI documentation",
+        "checked": "2026-10-19",
+        "note": "The CLI lists sending stablecoins and paying x402 services."
+      }
+    },
+    {
+      "product": "Hedera Agent Accounts",
+      "listing_slug": "hedera-agent-accounts",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://hedera.com/blog/introducing-hedera-agent-accounts/",
+        "source_title": "Introducing Hedera Agent Accounts",
+        "checked": "2026-10-19",
+        "note": "The blog states a per transaction maximum written to a smart contract."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://hedera.com/blog/introducing-hedera-agent-accounts/",
+        "source_title": "Introducing Hedera Agent Accounts",
+        "checked": "2026-10-19",
+        "note": "The blog states a daily cap and a total spend limit."
+      },
+      "allowlist": {
+        "value": "Yes",
+        "source_url": "https://hedera.com/blog/introducing-hedera-agent-accounts/",
+        "source_title": "Introducing Hedera Agent Accounts",
+        "checked": "2026-10-19",
+        "note": "The blog states an allowlist of recipients and merchants."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "The blog says the agent can transact without approval of every action. It does not state approval above a threshold."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://hedera.com/blog/introducing-hedera-agent-accounts/",
+        "source_title": "Introducing Hedera Agent Accounts",
+        "checked": "2026-10-19",
+        "note": "The blog says the owner can pause or revoke agent spending from the wallet."
+      },
+      "custody": {
+        "value": "Non custodial, owner wallet",
+        "source_url": "https://hedera.com/blog/introducing-hedera-agent-accounts/",
+        "source_title": "Introducing Hedera Agent Accounts",
+        "checked": "2026-10-19",
+        "note": "The blog says the account is non custodial and keys never leave the owner wallet."
+      },
+      "rails": {
+        "values": ["x402", "onchain transfer"],
+        "source_url": "https://hedera.com/blog/introducing-hedera-agent-accounts/",
+        "source_title": "Introducing Hedera Agent Accounts",
+        "checked": "2026-10-19",
+        "note": "The blog says agents can pay in HBAR or USDC on Hedera, and that accounts can pay x402."
+      }
+    },
+    {
+      "product": "MetaMask Agent Wallet",
+      "listing_slug": "metamask-agent-wallet",
+      "per_payment_cap": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Guard Mode docs describe a rolling 24 hour outflow limit, not a separate per payment cap."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://docs.metamask.io/agent-wallet/reference/outflow-policy/",
+        "source_title": "MetaMask Agent Wallet outflow policy",
+        "checked": "2026-10-19",
+        "note": "Guard Mode caps the value that can leave the server wallet in a rolling 24 hour window."
+      },
+      "allowlist": {
+        "value": "Yes",
+        "source_url": "https://docs.metamask.io/agent-wallet/reference/trading-modes/",
+        "source_title": "MetaMask Agent Wallet trading modes",
+        "checked": "2026-10-19",
+        "note": "Guard Mode enforces network, address, and token recipient allowlists. Beast Mode does not."
+      },
+      "approval_threshold": {
+        "value": "Yes",
+        "source_url": "https://docs.metamask.io/agent-wallet/reference/trading-modes/",
+        "source_title": "MetaMask Agent Wallet trading modes",
+        "checked": "2026-10-19",
+        "note": "Guard Mode requires 2FA when a transaction would exceed the outflow limit."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://docs.metamask.io/llms-agent-wallet-full.txt",
+        "source_title": "MetaMask Agent Wallet documentation",
+        "checked": "2026-10-19",
+        "note": "The logout command signs out and revokes the CLI session."
+      },
+      "custody": {
+        "value": "Self custody, server TEE or local seed",
+        "source_url": "https://docs.metamask.io/llms-agent-wallet-full.txt",
+        "source_title": "MetaMask Agent Wallet documentation",
+        "checked": "2026-10-19",
+        "note": "Server wallet keys are held in a TEE. Bring your own wallet signs with a local seed."
+      },
+      "rails": {
+        "values": ["x402", "onchain transfer"],
+        "source_url": "https://docs.metamask.io/llms-agent-wallet-full.txt",
+        "source_title": "MetaMask Agent Wallet documentation",
+        "checked": "2026-10-19",
+        "note": "Docs list x402 payments and transfers of native tokens and ERC-20s."
+      }
+    },
+    {
+      "product": "Nevermined",
+      "listing_slug": "nevermined",
+      "per_payment_cap": {
+        "value": "No",
+        "source_url": "https://nevermined.ai/docs/products/payments/mandates",
+        "source_title": "Nevermined delegations",
+        "checked": "2026-10-19",
+        "note": "Delegation docs say the spending limit is a lifetime total, not a per transaction cap."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://nevermined.ai/docs/solutions/card-delegation",
+        "source_title": "Nevermined card delegation",
+        "checked": "2026-10-19",
+        "note": "Card delegation sets a spending limit for a duration such as 24 hours or 7 days."
+      },
+      "allowlist": {
+        "value": "Yes",
+        "source_url": "https://nevermined.ai/docs/products/payments-facilitator/overview",
+        "source_title": "Nevermined payments facilitator",
+        "checked": "2026-10-19",
+        "note": "Facilitator docs name merchant allowlists in programmable x402 policy."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Device binding approves creation of a Visa delegation, not a later spend above a threshold."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://nevermined.ai/docs/products/payments/mandates",
+        "source_title": "Nevermined delegations",
+        "checked": "2026-10-19",
+        "note": "Deleting a delegation revokes it immediately."
+      },
+      "custody": {
+        "value": "Card token or ERC-4337",
+        "source_url": "https://nevermined.ai/docs/products/payments-facilitator/overview",
+        "source_title": "Nevermined payments facilitator",
+        "checked": "2026-10-19",
+        "note": "Docs name ERC-4337 smart accounts and a card delegation token."
+      },
+      "rails": {
+        "values": ["x402", "MPP", "cards"],
+        "source_url": "https://nevermined.ai/docs/products/payments-facilitator/overview",
+        "source_title": "Nevermined payments facilitator",
+        "checked": "2026-10-19",
+        "note": "The facilitator settles x402, MPP, and card delegation payments."
+      }
+    },
+    {
+      "product": "Polygon Agent CLI",
+      "listing_slug": "polygon-agent-cli",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://agentconnect.polygon.technology/references/cli-reference.md",
+        "source_title": "Polygon Agent CLI reference",
+        "checked": "2026-10-19",
+        "note": "x402-pay refuses a price above the max-usd flag. The default per call limit is $1."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://agentconnect.polygon.technology/references/cli-reference.md",
+        "source_title": "Polygon Agent CLI reference",
+        "checked": "2026-10-19",
+        "note": "Session login sets an allowance for 1 to 30 days. x402 payments default to $10 per rolling 24 hours."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "The current CLI reference says the V3 wallet has no per contract whitelists. Older Polygon docs still describe contract allowlists."
+      },
+      "approval_threshold": {
+        "value": "Yes",
+        "source_url": "https://agentconnect.polygon.technology/references/cli-reference.md",
+        "source_title": "Polygon Agent CLI reference",
+        "checked": "2026-10-19",
+        "note": "A price over the default per call limit asks the user to confirm before it is paid."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://agentconnect.polygon.technology/references/cli-reference.md",
+        "source_title": "Polygon Agent CLI reference",
+        "checked": "2026-10-19",
+        "note": "In session mode, wallet logout revokes that install's access."
+      },
+      "custody": {
+        "value": "Embedded smart wallet",
+        "source_url": "https://www.npmjs.com/package/@polygonlabs/agent-cli",
+        "source_title": "Polygon Agent CLI package",
+        "checked": "2026-10-19",
+        "note": "The package README says private keys are not exposed to the agent context."
+      },
+      "rails": {
+        "values": ["x402", "onchain transfer"],
+        "source_url": "https://agentconnect.polygon.technology/references/cli-reference.md",
+        "source_title": "Polygon Agent CLI reference",
+        "checked": "2026-10-19",
+        "note": "The CLI reference documents x402 payments and native or token sends."
+      }
+    },
+    {
+      "product": "Skyfire",
+      "listing_slug": "skyfire",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://docs.skyfire.xyz/reference/tokenamount",
+        "source_title": "Skyfire tokenAmount",
+        "checked": "2026-10-19",
+        "note": "tokenAmount is the maximum the seller can charge for that pay token."
+      },
+      "period_budget": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Token expiry is at most 24 hours. Docs do not state a daily, weekly, or session budget."
+      },
+      "allowlist": {
+        "value": "Partial",
+        "source_url": "https://docs.skyfire.xyz/docs/seller-services",
+        "source_title": "How Skyfire seller services work",
+        "checked": "2026-10-19",
+        "note": "A token is created for one seller service. Docs do not state a standing payee allowlist."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Docs checked do not state human approval above a spend threshold."
+      },
+      "revoke": {
+        "value": "Partial",
+        "source_url": "https://docs.skyfire.xyz/docs/payments-settlement",
+        "source_title": "Skyfire payments and settlement",
+        "checked": "2026-10-19",
+        "note": "Deactivation stops new tokens. Issued pay tokens stay chargeable until they expire."
+      },
+      "custody": {
+        "value": "Buyer agent wallet",
+        "source_url": "https://docs.skyfire.xyz/reference/tokenamount",
+        "source_title": "Skyfire tokenAmount",
+        "checked": "2026-10-19",
+        "note": "tokenAmount cannot exceed the balance in the buyer agent wallet."
+      },
+      "rails": {
+        "values": ["UNKNOWN"],
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Docs describe KYAPay token charges and do not name a rail from this column."
+      }
+    },
+    {
+      "product": "Stripe link-cli",
+      "listing_slug": "stripe-link-cli",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://github.com/stripe/link-cli/blob/main/README.md",
+        "source_title": "stripe/link-cli README",
+        "checked": "2026-10-19",
+        "note": "The README caps one spend request at $500, written as 50,000 cents."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://github.com/stripe/link-cli/blob/main/README.md",
+        "source_title": "stripe/link-cli README",
+        "checked": "2026-10-19",
+        "note": "The README lists a daily spend limit of $500 and a 30 day limit of $20,000."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "An approval policy can list payment method IDs. It does not state a payee or protocol allowlist."
+      },
+      "approval_threshold": {
+        "value": "Yes",
+        "source_url": "https://github.com/stripe/link-cli/blob/main/README.md",
+        "source_title": "stripe/link-cli README",
+        "checked": "2026-10-19",
+        "note": "Docs require customer approval of a spend request. A policy can allow creates under a per purchase limit without manual approval."
+      },
+      "revoke": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "The README can cancel one spend request. It does not state a revoke of agent spending authority."
+      },
+      "custody": {
+        "value": "Link payment credential",
+        "source_url": "https://docs.stripe.com/agentic-commerce/agents/link-agent-wallet/use-link-wallet-pay-online",
+        "source_title": "Enable agents to spend",
+        "checked": "2026-10-19",
+        "note": "Link returns a one time credential and does not expose the customer card or bank number."
+      },
+      "rails": {
+        "values": ["MPP", "cards"],
+        "source_url": "https://github.com/stripe/link-cli/blob/main/README.md",
+        "source_title": "stripe/link-cli README",
+        "checked": "2026-10-19",
+        "note": "The README documents card spend requests and Machine Payments Protocol charges."
+      }
+    },
+    {
+      "product": "Sui Agentic Payments",
+      "listing_slug": "sui-agentic-payments",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://www.sui.io/agentpayments",
+        "source_title": "Sui Agent Payments",
+        "checked": "2026-10-19",
+        "note": "A grant includes a per payment cap enforced onchain at settlement."
+      },
+      "period_budget": {
+        "value": "Partial",
+        "source_url": "https://www.sui.io/agentpayments",
+        "source_title": "Sui Agent Payments",
+        "checked": "2026-10-19",
+        "note": "A grant sets a total budget and an expiry, not a stated daily, weekly, or session budget."
+      },
+      "allowlist": {
+        "value": "Yes",
+        "source_url": "https://www.sui.io/agentpayments",
+        "source_title": "Sui Agent Payments",
+        "checked": "2026-10-19",
+        "note": "A grant names the services the agent can buy. A request outside it does not settle."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "Docs say an agent can buy without a human approving each call, and do not state approval above a threshold."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://www.sui.io/agentpayments",
+        "source_title": "Sui Agent Payments",
+        "checked": "2026-10-19",
+        "note": "Docs say the owner can revoke a grant at any time."
+      },
+      "custody": {
+        "value": "Owner pool, delegated key",
+        "source_url": "https://www.sui.io/agentpayments",
+        "source_title": "Sui Agent Payments",
+        "checked": "2026-10-19",
+        "note": "The owner keeps the wallet. MCP can custody the delegate key, or the owner can bring one."
+      },
+      "rails": {
+        "values": ["x402", "MPP", "onchain transfer"],
+        "source_url": "https://www.sui.io/agentpayments",
+        "source_title": "Sui Agent Payments",
+        "checked": "2026-10-19",
+        "note": "The page says the gateway implements MPP and x402 and settles USDC on Sui."
+      }
+    },
+    {
+      "product": "Tempo Wallet",
+      "listing_slug": "tempo-wallet",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://tempo.xyz/developers/docs/guide/machine-payments/agent",
+        "source_title": "Tempo guide to paying with the CLI",
+        "checked": "2026-10-19",
+        "note": "The max-spend flag caps payment spending for one command."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://accounts.tempo.xyz/docs/rpc/wallet_authorizeAccessKey",
+        "source_title": "Tempo wallet_authorizeAccessKey",
+        "checked": "2026-10-19",
+        "note": "A key limit can set a token cap and an optional period in seconds, plus an expiry."
+      },
+      "allowlist": {
+        "value": "Yes",
+        "source_url": "https://accounts.tempo.xyz/docs/guides/spend-permissions",
+        "source_title": "Tempo spend permissions",
+        "checked": "2026-10-19",
+        "note": "Scopes name which calls a key may make, and a scope can list allowed recipients."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-19",
+        "note": "The user approves the key limits up front. Docs do not state a later approval above a threshold."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://accounts.tempo.xyz/docs/guides/spend-permissions",
+        "source_title": "Tempo spend permissions",
+        "checked": "2026-10-19",
+        "note": "The guide says the user can revoke an access key."
+      },
+      "custody": {
+        "value": "User account, access key",
+        "source_url": "https://accounts.tempo.xyz/docs/guides/spend-permissions",
+        "source_title": "Tempo spend permissions",
+        "checked": "2026-10-19",
+        "note": "A connected Tempo account approves a scoped access key for later payments."
+      },
+      "rails": {
+        "values": ["MPP"],
+        "source_url": "https://tempo.xyz/developers/docs/guide/machine-payments/agent",
+        "source_title": "Tempo guide to paying with the CLI",
+        "checked": "2026-10-19",
+        "note": "The pay with the CLI guide documents MPP payments for agents."
+      }
+    }
+  ]
+}
