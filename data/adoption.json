@@ -1,5 +1,12 @@
 [
   {
+    "slug": "agent-vault",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-20"
+  },
+  {
     "slug": "ap2",
     "claimed": "UNKNOWN",
     "measured": "UNKNOWN",

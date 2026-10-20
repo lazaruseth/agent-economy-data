@@ -31,7 +31,7 @@
       "title": "Overview of agent identities in Microsoft Entra",
       "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-identities"
     },
-    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol"],
+    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol", "x401"],
     "related": ["agntcy", "did", "erc-8004", "kyapay", "web-bot-auth"],
     "last_verified": "2026-10-17"
   },
@@ -74,14 +74,14 @@
   {
     "slug": "agentic-commerce-protocol",
     "term": "Agentic Commerce Protocol",
-    "definition": "Open standard for an agent to browse a catalog, run a checkout session, and pass a delegated payment to a business.",
+    "definition": "Open standard for an agent to browse a catalog, run a checkout session, pass a delegated payment, and delegate authentication with OAuth 2.0. Stripe documents it as created by Stripe, OpenAI, and Meta.",
     "source": {
       "title": "Stripe documentation for the Agentic Commerce Protocol",
       "url": "https://docs.stripe.com/agentic-commerce/protocols/acp"
     },
     "listings": ["agentic-commerce-protocol"],
     "related": ["ucp"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-10-20"
   },
   {
     "slug": "agntcy",
@@ -205,7 +205,7 @@
       "title": "LangGraph overview",
       "url": "https://docs.langchain.com/oss/python/langgraph/overview"
     },
-    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra"],
+    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault"],
     "related": ["guardrail", "multi-agent", "tool-call"],
     "last_verified": "2026-10-17"
   },
