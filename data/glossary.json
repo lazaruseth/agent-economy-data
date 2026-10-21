@@ -115,8 +115,26 @@
       "title": "Akash Network introduction",
       "url": "https://akash.network/docs/getting-started/what-is-akash/"
     },
-    "listings": ["akash-network", "render-network", "gensyn"],
-    "related": ["agent-marketplace", "digital-commodity"],
+    "listings": ["akash-network", "render-network", "gensyn", "ornn"],
+    "related": ["agent-marketplace", "compute-futures", "digital-commodity"],
+    "last_verified": "2026-10-21"
+  },
+  {
+    "slug": "compute-futures",
+    "term": "Compute futures",
+    "definition": "A futures contract quoted in dollars per GPU hour. AX lists dated H100, H200, B200, and B300 contracts on its public instrument list. ICE has published monthly cash settled specifications on the Ornn Compute Price Index and says no listing date is set.",
+    "source": {
+      "title": "AX instruments feed",
+      "url": "https://gateway.architect.exchange/api/instruments"
+    },
+    "more_sources": [
+      {
+        "title": "ICE Futures U.S. notice, 29 September 2026",
+        "url": "https://www.ice.com/publicdocs/futures_us/exchange_notices/ICE_Futures_US_Exchange_Notice_ORNN_Compute_4Q2026_20260929.pdf"
+      }
+    ],
+    "listings": ["architect", "ornn"],
+    "related": ["compute-marketplace"],
     "last_verified": "2026-10-21"
   },
   {
@@ -597,7 +615,7 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn"],
     "related": ["json-rpc", "personal-agent-protocol", "tool-call", "ucp"],
     "last_verified": "2026-10-17"
   },
