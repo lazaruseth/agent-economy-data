@@ -1,7 +1,166 @@
 {
   "title": "Agent spend controls compared",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "rows": [
+    {
+      "product": "Agent Vault",
+      "listing_slug": "agent-vault",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://docs.agentvault.io/",
+        "source_title": "What is Agent Vault",
+        "checked": "2026-10-20",
+        "note": "The overview states caps per transaction, per day, per week, and per rolling 30 days."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://docs.agentvault.io/",
+        "source_title": "What is Agent Vault",
+        "checked": "2026-10-20",
+        "note": "The same overview states per day, per week, and per rolling 30 day caps."
+      },
+      "allowlist": {
+        "value": "Partial",
+        "source_url": "https://docs.agentvault.io/",
+        "source_title": "What is Agent Vault",
+        "checked": "2026-10-20",
+        "note": "Users can block sites. An allow only list of sites is described for Enterprise."
+      },
+      "approval_threshold": {
+        "value": "Yes",
+        "source_url": "https://docs.agentvault.io/",
+        "source_title": "What is Agent Vault",
+        "checked": "2026-10-20",
+        "note": "Above an amount the account holder chooses, checkout waits for a yes."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://docs.agentvault.io/",
+        "source_title": "What is Agent Vault",
+        "checked": "2026-10-20",
+        "note": "A kill switch stops every agent in one click."
+      },
+      "custody": {
+        "value": "Card vault, agent holds a token",
+        "source_url": "https://docs.agentvault.io/",
+        "source_title": "What is Agent Vault",
+        "checked": "2026-10-20",
+        "note": "The card number stays in a vault. The agent receives a mock token."
+      },
+      "rails": {
+        "values": ["cards"],
+        "source_url": "https://docs.agentvault.io/",
+        "source_title": "What is Agent Vault",
+        "checked": "2026-10-20",
+        "note": "The proxy types the real card into the merchant page after the rules pass."
+      }
+    },
+    {
+      "product": "Agentic Commerce Protocol",
+      "listing_slug": "agentic-commerce-protocol",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://www.agenticcommerce.dev/docs/reference/payments",
+        "source_title": "ACP delegate payment",
+        "checked": "2026-10-20",
+        "note": "max_amount is the maximum charge for that one time allowance."
+      },
+      "period_budget": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The allowance reason is one_time and it has an expiry. A period budget is not stated."
+      },
+      "allowlist": {
+        "value": "Partial",
+        "source_url": "https://www.agenticcommerce.dev/docs/reference/payments",
+        "source_title": "ACP delegate payment",
+        "checked": "2026-10-20",
+        "note": "merchant_id names the one merchant that may use the token."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "A risk signal can ask for manual review. A spend approval threshold is not stated."
+      },
+      "revoke": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "expires_at ends the allowance. The page does not state a revoke call."
+      },
+      "custody": {
+        "value": "Card vault token",
+        "source_url": "https://www.agenticcommerce.dev/docs/reference/payments",
+        "source_title": "ACP delegate payment",
+        "checked": "2026-10-20",
+        "note": "The endpoint tokenizes a card and returns a vault token."
+      },
+      "rails": {
+        "values": ["cards"],
+        "source_url": "https://www.agenticcommerce.dev/docs/reference/payments",
+        "source_title": "ACP delegate payment",
+        "checked": "2026-10-20",
+        "note": "The payment method type in this schema is card."
+      }
+    },
+    {
+      "product": "AP2",
+      "listing_slug": "ap2",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://ap2-protocol.org/ap2/payment_mandate/",
+        "source_title": "AP2 payment mandate",
+        "checked": "2026-10-20",
+        "note": "Amount range sets a maximum the payment mandate amount must stay within."
+      },
+      "period_budget": {
+        "value": "Partial",
+        "source_url": "https://ap2-protocol.org/ap2/payment_mandate/",
+        "source_title": "AP2 payment mandate",
+        "checked": "2026-10-20",
+        "note": "Budget is a total cap used with recurrence, not a budget that resets each period."
+      },
+      "allowlist": {
+        "value": "Yes",
+        "source_url": "https://ap2-protocol.org/ap2/payment_mandate/",
+        "source_title": "AP2 payment mandate",
+        "checked": "2026-10-20",
+        "note": "Allowed Payee limits the payee to a set of merchants. A category list is not stated."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "A trusted surface renders the mandate to the user. A later approval threshold is not stated."
+      },
+      "revoke": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The payment mandate page does not define a revoke call. Expiry is a timestamp, not a revoke."
+      },
+      "custody": {
+        "value": "User signed mandate",
+        "source_url": "https://ap2-protocol.org/ap2/payment_mandate/",
+        "source_title": "AP2 payment mandate",
+        "checked": "2026-10-20",
+        "note": "The shopping agent creates the mandate content and a trusted surface renders it to the user."
+      },
+      "rails": {
+        "values": ["cards", "x402"],
+        "source_url": "https://ap2-protocol.org/",
+        "source_title": "AP2 protocol documentation",
+        "checked": "2026-10-20",
+        "note": "The AP2 site says the first version supports card pull payments and links an x402 sample."
+      }
+    },
     {
       "product": "Coinbase Agentic Wallet",
       "listing_slug": "coinbase-agentic-wallet",
@@ -106,6 +265,112 @@
         "source_title": "Introducing Hedera Agent Accounts",
         "checked": "2026-10-19",
         "note": "The blog says agents can pay in HBAR or USDC on Hedera, and that accounts can pay x402."
+      }
+    },
+    {
+      "product": "Ledger Agent Intent",
+      "listing_slug": "ledger-agent-intent",
+      "per_payment_cap": {
+        "value": "No",
+        "source_url": "https://developers.ledger.com/docs/ai-tools/agent-intent",
+        "source_title": "How to use Ledger Agent Intent",
+        "checked": "2026-10-20",
+        "note": "The page says per payment limits are set in the payment tool, not in this product."
+      },
+      "period_budget": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The page describes an approved top up, not a daily, weekly, or session budget."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The user can choose which accounts the agent sees. A payee allowlist is not stated."
+      },
+      "approval_threshold": {
+        "value": "Partial",
+        "source_url": "https://developers.ledger.com/docs/ai-tools/agent-intent",
+        "source_title": "How to use Ledger Agent Intent",
+        "checked": "2026-10-20",
+        "note": "Every intent needs signer approval. The page does not state a threshold where approval starts."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://developers.ledger.com/docs/ai-tools/agent-intent",
+        "source_title": "How to use Ledger Agent Intent",
+        "checked": "2026-10-20",
+        "note": "Removing the agent in Ledger Agent Intent stops it from sending intents."
+      },
+      "custody": {
+        "value": "User signer, agent has no wallet keys",
+        "source_url": "https://developers.ledger.com/docs/ai-tools/agent-intent",
+        "source_title": "How to use Ledger Agent Intent",
+        "checked": "2026-10-20",
+        "note": "The agent uses a separate identity key. Wallet keys stay on the user signer."
+      },
+      "rails": {
+        "values": ["onchain transfer"],
+        "source_url": "https://developers.ledger.com/docs/ai-tools/agent-intent",
+        "source_title": "How to use Ledger Agent Intent",
+        "checked": "2026-10-20",
+        "note": "Launch intents are sends of ETH, SOL, and tokens, plus Ethereum swaps."
+      }
+    },
+    {
+      "product": "Machine Payments Protocol",
+      "listing_slug": "mpp",
+      "per_payment_cap": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The spend guide example is a daily token limit on a Tempo access key, not a per payment cap."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://mpp.dev/guides/managing-agent-spend",
+        "source_title": "Managing agent spend",
+        "checked": "2026-10-20",
+        "note": "The Tempo access key example can spend up to 10 OUSD per day."
+      },
+      "allowlist": {
+        "value": "Yes",
+        "source_url": "https://mpp.dev/guides/managing-agent-spend",
+        "source_title": "Managing agent spend",
+        "checked": "2026-10-20",
+        "note": "That example limits an OUSD transfer to one recipient address."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The guide shows a wallet authorizing the key up front. It does not state later approval above a threshold."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://mpp.dev/guides/managing-agent-spend",
+        "source_title": "Managing agent spend",
+        "checked": "2026-10-20",
+        "note": "The guide says each key can have its own revocation path."
+      },
+      "custody": {
+        "value": "Delegated access key or server key",
+        "source_url": "https://mpp.dev/guides/managing-agent-spend",
+        "source_title": "Managing agent spend",
+        "checked": "2026-10-20",
+        "note": "The guide shows a Tempo access key, a local private key, and a Privy wallet."
+      },
+      "rails": {
+        "values": ["cards", "onchain transfer", "Lightning"],
+        "source_url": "https://mpp.dev/",
+        "source_title": "MPP protocol site",
+        "checked": "2026-10-20",
+        "note": "The MPP site lists Tempo stablecoins, Stripe cards, and Lightning Bitcoin."
       }
     },
     {
@@ -477,6 +742,59 @@
         "source_title": "Tempo guide to paying with the CLI",
         "checked": "2026-10-19",
         "note": "The pay with the CLI guide documents MPP payments for agents."
+      }
+    },
+    {
+      "product": "Visa Trusted Agent Protocol",
+      "listing_slug": "visa-trusted-agent-protocol",
+      "per_payment_cap": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The Visa getting started page describes agent signatures and does not state this control."
+      },
+      "period_budget": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The Visa getting started page describes agent signatures and does not state this control."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The Visa getting started page describes agent signatures and does not state this control."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The Visa getting started page describes agent signatures and does not state this control."
+      },
+      "revoke": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The Visa getting started page describes agent signatures and does not state this control."
+      },
+      "custody": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The Visa getting started page describes agent signatures and does not state this control."
+      },
+      "rails": {
+        "values": ["UNKNOWN"],
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-20",
+        "note": "The Visa getting started page describes agent signatures and does not state this control."
       }
     }
   ]

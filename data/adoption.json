@@ -45,6 +45,13 @@
     "checked": "2026-10-19"
   },
   {
+    "slug": "mastercard-agent-pay",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-21"
+  },
+  {
     "slug": "metamask-agent-wallet",
     "claimed": "UNKNOWN",
     "measured": "UNKNOWN",
@@ -149,7 +156,7 @@
         "source_url": "https://x402.org/",
         "source_title": "x402.org Last 30 Days panel",
         "measured_by": "x402",
-        "checked": "2026-10-19"
+        "checked": "2026-10-20"
       },
       {
         "metric": "Volume, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
@@ -158,7 +165,7 @@
         "source_url": "https://x402.org/",
         "source_title": "x402.org Last 30 Days panel",
         "measured_by": "x402",
-        "checked": "2026-10-19"
+        "checked": "2026-10-20"
       },
       {
         "metric": "Buyers, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
@@ -167,7 +174,7 @@
         "source_url": "https://x402.org/",
         "source_title": "x402.org Last 30 Days panel",
         "measured_by": "x402",
-        "checked": "2026-10-19"
+        "checked": "2026-10-20"
       },
       {
         "metric": "Sellers, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
@@ -176,45 +183,81 @@
         "source_url": "https://x402.org/",
         "source_title": "x402.org Last 30 Days panel",
         "measured_by": "x402",
-        "checked": "2026-10-19"
+        "checked": "2026-10-20"
       }
     ],
     "measured": [
       {
         "metric": "Transactions, past 30 days",
-        "value": "3.02M",
+        "value": "3.03M",
         "as_of": null,
         "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
-        "checked": "2026-10-19"
+        "checked": "2026-10-20"
       },
       {
         "metric": "Volume, past 30 days",
-        "value": "$1.22M",
+        "value": "$1.41M",
         "as_of": null,
         "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
-        "checked": "2026-10-19"
+        "checked": "2026-10-20"
       },
       {
         "metric": "Buyers, past 30 days",
-        "value": "36.24K",
+        "value": "35.81K",
         "as_of": null,
         "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
-        "checked": "2026-10-19"
+        "checked": "2026-10-20"
       },
       {
-        "metric": "Sellers, past 30 days, higher than the x402.org panel figure of 22K, and not re-read from a static fetch of the client rendered page",
+        "metric": "Sellers, past 30 days",
         "value": "38K",
         "as_of": null,
         "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
-        "checked": "2026-10-19"
+        "checked": "2026-10-20"
+      },
+      {
+        "metric": "Cumulative raw onchain volume since May 2025",
+        "value": "over $135.7M",
+        "as_of": "2026-04-21",
+        "source_url": "https://www.visa.com/api/image-proxy?path=%2Fcontent%2Fdam%2Fvisa%2Freimagine-visa%2Fthought-leadership%2Fdocuments%2Fagentic-payments-report.pdf",
+        "source_title": "Agentic Payments from the Ground Up (Visa and Artemis)",
+        "measured_by": "Artemis Analytics",
+        "checked": "2026-10-20"
+      },
+      {
+        "metric": "Cumulative raw onchain transactions since May 2025",
+        "value": "178.3M",
+        "as_of": "2026-04-21",
+        "source_url": "https://www.visa.com/api/image-proxy?path=%2Fcontent%2Fdam%2Fvisa%2Freimagine-visa%2Fthought-leadership%2Fdocuments%2Fagentic-payments-report.pdf",
+        "source_title": "Agentic Payments from the Ground Up (Visa and Artemis)",
+        "measured_by": "Artemis Analytics",
+        "checked": "2026-10-20"
+      },
+      {
+        "metric": "Adjusted cumulative volume since May 2025",
+        "value": "roughly $15.0 million",
+        "as_of": "2026-04-21",
+        "source_url": "https://www.visa.com/en-us/thought-leadership/innovation/agentic-payments-from-the-ground-up",
+        "source_title": "Agentic Payments from the Ground Up, Visa article",
+        "measured_by": "Visa and Artemis",
+        "checked": "2026-10-20"
+      },
+      {
+        "metric": "Adjusted cumulative transactions since May 2025",
+        "value": "109.6 million",
+        "as_of": "2026-04-21",
+        "source_url": "https://www.visa.com/en-us/thought-leadership/innovation/agentic-payments-from-the-ground-up",
+        "source_title": "Agentic Payments from the Ground Up, Visa article",
+        "measured_by": "Visa and Artemis",
+        "checked": "2026-10-20"
       }
     ],
     "notes": [
@@ -231,12 +274,12 @@
         "date": "2026-09-27"
       },
       {
-        "text": "x402scan states 38K sellers while the x402.org panel states 22K sellers. The two counts may use different definitions or windows. A static fetch of x402scan does not show the figure, so this measured seller count is kept only with that caveat.",
-        "source_url": "https://www.x402scan.com/",
-        "source_title": "x402scan overall stats",
-        "date": "2026-10-19"
+        "text": "ChainWard says that, in the view it read, x402scan's cross-chain count for roughly the last 30 days was 16.9M transactions and $959K, and that about 85% of those transactions went to one Solana seller with 72 buyers.",
+        "source_url": "https://chainward.ai/decodes/x402-on-base",
+        "source_title": "ChainWard, x402 on Base, one week on chain",
+        "date": "2026-09-27"
       }
     ],
-    "checked": "2026-10-19"
+    "checked": "2026-10-20"
   }
 ]

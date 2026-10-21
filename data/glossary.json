@@ -7,7 +7,7 @@
       "title": "A2A core concepts",
       "url": "https://a2a-protocol.org/latest/topics/key-concepts/"
     },
-    "listings": ["a2a", "pact", "ap2", "ucp", "gensyn"],
+    "listings": ["a2a", "pact", "ap2", "ucp", "gensyn", "concordium-agent-registry"],
     "related": ["agent-card", "agntcy", "ap2", "json-rpc", "pact", "ucp"],
     "last_verified": "2026-10-17"
   },
@@ -19,7 +19,7 @@
       "title": "A2A core concepts",
       "url": "https://a2a-protocol.org/latest/topics/key-concepts/"
     },
-    "listings": ["a2a"],
+    "listings": ["a2a", "concordium-agent-registry"],
     "related": ["a2a"],
     "last_verified": "2026-10-17"
   },
@@ -32,7 +32,7 @@
       "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-identities"
     },
     "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol", "x401"],
-    "related": ["agntcy", "did", "erc-8004", "kyapay", "web-bot-auth"],
+    "related": ["agntcy", "did", "erc-8004", "know-your-agent", "kyapay", "web-bot-auth"],
     "last_verified": "2026-10-17"
   },
   {
@@ -117,7 +117,7 @@
     },
     "listings": ["akash-network", "render-network", "gensyn"],
     "related": ["agent-marketplace", "digital-commodity"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-10-21"
   },
   {
     "slug": "content-addressed-proof",
@@ -169,8 +169,8 @@
       "title": "ERC-8004 Trustless Agents",
       "url": "https://eips.ethereum.org/EIPS/eip-8004"
     },
-    "listings": ["erc-8004"],
-    "related": ["agent-identity", "did"],
+    "listings": ["erc-8004", "concordium-agent-registry"],
+    "related": ["agent-identity", "did", "know-your-agent"],
     "last_verified": "2026-10-17"
   },
   {
@@ -193,7 +193,7 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay"],
     "related": ["l402", "machine-payments-protocol", "x402"],
     "last_verified": "2026-10-17"
   },
@@ -222,6 +222,338 @@
     "last_verified": "2026-10-17"
   },
   {
+    "slug": "know-your-agent",
+    "term": "Know Your Agent",
+    "definition": "Know Your Agent is the check a merchant or service runs before it lets an agent transact. The check asks which agent is acting, on whose behalf, and with what authority.",
+    "source": {
+      "title": "Beltic press release, 2026-09-30",
+      "url": "https://www.prnewswire.com/news-releases/beltic-emerges-from-stealth-to-secure-autonomous-agent-transactions-at-scale-302893772.html"
+    },
+    "more_sources": [
+      {
+        "title": "Skyfire Know Your Agent documentation",
+        "url": "https://docs.skyfire.xyz/docs/kya"
+      },
+      {
+        "title": "Visa Trusted Agent Protocol getting started",
+        "url": "https://developer.visa.com/docs/trusted-agent-protocol"
+      }
+    ],
+    "listings": [
+      "beltic-kya",
+      "concordium-agent-registry",
+      "entra-agent-id",
+      "erc-8004",
+      "mastercard-agent-pay",
+      "skyfire",
+      "visa-trusted-agent-protocol",
+      "web-bot-auth",
+      "x401"
+    ],
+    "related": ["agent-identity", "erc-8004", "kyapay", "web-bot-auth"],
+    "last_verified": "2026-10-21",
+    "article": {
+      "meta_description": "Know Your Agent verifies which agent is acting, on whose behalf, and with what authority before a merchant or service lets it transact.",
+      "categories": ["identity"],
+      "lede_sources": [
+        {
+          "title": "Beltic press release, 2026-09-30",
+          "url": "https://www.prnewswire.com/news-releases/beltic-emerges-from-stealth-to-secure-autonomous-agent-transactions-at-scale-302893772.html"
+        },
+        {
+          "title": "Skyfire Know Your Agent documentation",
+          "url": "https://docs.skyfire.xyz/docs/kya"
+        },
+        {
+          "title": "Visa Trusted Agent Protocol getting started",
+          "url": "https://developer.visa.com/docs/trusted-agent-protocol"
+        }
+      ],
+      "mechanism": [
+        {
+          "text": "A relying party uses the check before it lets an agent act. The proof can name the agent, the party the agent acts for, the authority for the action, or a combination of those. Directory pages for the identity approaches with a listing are [[0]], [[1]], [[2]], [[3]], [[4]], [[5]], [[6]], and [[7]].",
+          "links": [
+            { "label": "Beltic KYA", "href": "/listings/beltic-kya" },
+            { "label": "Concordium Agent Registry", "href": "/listings/concordium-agent-registry" },
+            { "label": "ERC-8004", "href": "/listings/erc-8004" },
+            { "label": "Microsoft Entra Agent ID", "href": "/listings/entra-agent-id" },
+            { "label": "Skyfire", "href": "/listings/skyfire" },
+            { "label": "Visa Trusted Agent Protocol", "href": "/listings/visa-trusted-agent-protocol" },
+            { "label": "Web Bot Auth", "href": "/listings/web-bot-auth" },
+            { "label": "x401", "href": "/listings/x401" }
+          ],
+          "sources": [
+            {
+              "title": "Beltic press release, 2026-09-30",
+              "url": "https://www.prnewswire.com/news-releases/beltic-emerges-from-stealth-to-secure-autonomous-agent-transactions-at-scale-302893772.html"
+            },
+            {
+              "title": "Skyfire Know Your Agent documentation",
+              "url": "https://docs.skyfire.xyz/docs/kya"
+            },
+            {
+              "title": "Visa Trusted Agent Protocol getting started",
+              "url": "https://developer.visa.com/docs/trusted-agent-protocol"
+            }
+          ]
+        },
+        {
+          "text": "Shorter glossary entries for pieces of this check are [[0]], [[1]], [[2]], and [[3]].",
+          "links": [
+            { "label": "agent identity", "href": "/glossary/agent-identity" },
+            { "label": "ERC-8004", "href": "/glossary/erc-8004" },
+            { "label": "KYAPay", "href": "/glossary/kyapay" },
+            { "label": "Web Bot Auth", "href": "/glossary/web-bot-auth" }
+          ],
+          "sources": [
+            {
+              "title": "What is Microsoft Entra Agent ID",
+              "url": "https://learn.microsoft.com/en-us/entra/agent-id/what-is-microsoft-entra-agent-id"
+            },
+            {
+              "title": "ERC-8004 Trustless Agents",
+              "url": "https://eips.ethereum.org/EIPS/eip-8004"
+            },
+            {
+              "title": "Skyfire KYAPay token documentation",
+              "url": "https://docs.skyfire.xyz/docs/kyapay-tokens"
+            },
+            {
+              "title": "Cloudflare Web Bot Auth documentation",
+              "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
+            }
+          ]
+        },
+        {
+          "text": "A spending limit is a different control from these identity checks. [[0]] is a pilot payment rail: the principal sets the limit, a service can return HTTP 402, and the agent signs a payment voucher. Mastercard opened Early Access on 2026-10-20 and says it is not available commercially.",
+          "links": [
+            { "label": "Mastercard Agent Pay for Machines", "href": "/listings/mastercard-agent-pay" }
+          ],
+          "sources": [
+            {
+              "title": "Mastercard Agent Pay for Machines Early Access",
+              "url": "https://www.mastercard.com/global/en/business/payments/consumer-payments/next-gen-payments/digital-asset-solutions/cloudflare-connect-2026.html"
+            },
+            {
+              "title": "Mastercard Agent Pay for Machines at Cloudflare Connect, 2026-10-20",
+              "url": "https://www.mastercard.com/global/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html"
+            }
+          ]
+        }
+      ],
+      "comparison": [
+        {
+          "name": "Beltic KYA",
+          "listing": "beltic-kya",
+          "glossary": null,
+          "verified": "The agent, the operator who sent it, and whether the action is authorized.",
+          "how": "Beltic's site says each agent gets an identity, the request carries the operator and origin, and Beltic keeps a signed record of who acted. Its SDK verifies RFC 9421 HTTP message signatures and validates agent credentials.",
+          "issuer": "Beltic, which its 2026-09-30 release says verifies the agent.",
+          "status": "Early access",
+          "sources": [
+            {
+              "title": "Beltic site",
+              "url": "https://www.beltic.com/"
+            },
+            {
+              "title": "Beltic press release, 2026-09-30",
+              "url": "https://www.prnewswire.com/news-releases/beltic-emerges-from-stealth-to-secure-autonomous-agent-transactions-at-scale-302893772.html"
+            },
+            {
+              "title": "Beltic KYA TypeScript SDK",
+              "url": "https://kya-docs.beltic.app/docs/sdk-guide"
+            }
+          ]
+        },
+        {
+          "name": "Concordium Agent Registry",
+          "listing": "concordium-agent-registry",
+          "glossary": null,
+          "verified": "That the agent is active in the registry, owned by a Concordium account, and that its Agent Card bytes match the on-chain SHA-256 hash. Concordium's ID layer links that owner to a verified person.",
+          "how": "CIS-8004 mints each agent as a token that points at an Agent Card. The card is also an ERC-8004 registration file and an A2A v1.0 Agent Card. CIS-8 can bind an external key. Concordium's 2026-10-20 post says x402 payments now settle on the network.",
+          "issuer": "The owner registers the agent. Concordium documents mainnet registry contract 10082.",
+          "status": "Live on mainnet",
+          "sources": [
+            {
+              "title": "Concordium Agent Registry reference",
+              "url": "https://docs.concordium.com/en/mainnet/technical-reference/agent-registry/index.html"
+            },
+            {
+              "title": "Concordium Agent Card reference",
+              "url": "https://docs.concordium.com/en/mainnet/technical-reference/agent-registry/agent-card.html"
+            },
+            {
+              "title": "Concordium Agent Registry update, 2026-10-20",
+              "url": "https://www.concordium.com/article/agent-registry-update-october-2026"
+            }
+          ]
+        },
+        {
+          "name": "ERC-8004",
+          "listing": "erc-8004",
+          "glossary": "erc-8004",
+          "verified": "An on-chain agent identifier, feedback about that agent, and a validation result. Payments are out of scope.",
+          "how": "An ERC-721 identity registry assigns the agent id and points at a registration file. Separate registries store feedback and validation results.",
+          "issuer": "Whoever deploys the registry. The ERC-721 owner controls the agent record.",
+          "status": "Draft",
+          "sources": [
+            {
+              "title": "ERC-8004 Trustless Agents",
+              "url": "https://eips.ethereum.org/EIPS/eip-8004"
+            }
+          ]
+        },
+        {
+          "name": "Microsoft Entra Agent ID",
+          "listing": "entra-agent-id",
+          "glossary": null,
+          "verified": "The agent identity in a tenant, so access policy, risk checks, and audit logs can apply to it.",
+          "how": "The tenant creates agent identities from blueprints. Authentication can use OAuth 2.0. Microsoft also lists MCP and A2A, and says Agent ID is available for all Microsoft Entra customers.",
+          "issuer": "The organization's Microsoft Entra tenant.",
+          "status": "Live",
+          "sources": [
+            {
+              "title": "What is Microsoft Entra Agent ID",
+              "url": "https://learn.microsoft.com/en-us/entra/agent-id/what-is-microsoft-entra-agent-id"
+            }
+          ]
+        },
+        {
+          "name": "Skyfire KYAPay",
+          "listing": "skyfire",
+          "glossary": "kyapay",
+          "verified": "The individual or organization that controls the agent, and a payment the buyer committed when the token includes pay.",
+          "how": "The buyer agent creates a signed JWT. A kya token carries identity claims. A pay token carries the amount the seller charges after delivery. A kya-pay token carries both. Buyers and sellers exchange the token directly.",
+          "issuer": "Skyfire signs tokens created through its API. The JWT shape is also an IETF Internet-Draft.",
+          "status": "Live product, draft format",
+          "sources": [
+            {
+              "title": "Skyfire KYAPay token documentation",
+              "url": "https://docs.skyfire.xyz/docs/kyapay-tokens"
+            },
+            {
+              "title": "Skyfire Know Your Agent documentation",
+              "url": "https://docs.skyfire.xyz/docs/kya"
+            },
+            {
+              "title": "KYAPay token Internet-Draft",
+              "url": "https://datatracker.ietf.org/doc/html/draft-skyfire-oauth-kyapay-token"
+            }
+          ]
+        },
+        {
+          "name": "Visa Trusted Agent Protocol",
+          "listing": "visa-trusted-agent-protocol",
+          "glossary": null,
+          "verified": "That a Visa-approved agent sent the request. The protocol also describes signatures for consumer recognition and payment.",
+          "how": "The agent adds an RFC 9421 HTTP message signature. The merchant rebuilds the signed material and checks it with the agent's public key.",
+          "issuer": "Visa approves the agent. Its 2026-07-02 release says live merchant purchases used Trusted Agent Protocol and the Agent Directory.",
+          "status": "Live",
+          "sources": [
+            {
+              "title": "Visa Trusted Agent Protocol getting started",
+              "url": "https://developer.visa.com/docs/trusted-agent-protocol"
+            },
+            {
+              "title": "Visa press release on live agentic transactions in Europe, 2026-07-02",
+              "url": "https://www.visa.co.uk/about-visa/newsroom/press-releases.3457328.html"
+            }
+          ]
+        },
+        {
+          "name": "Web Bot Auth",
+          "listing": "web-bot-auth",
+          "glossary": "web-bot-auth",
+          "verified": "Which automated client signed the HTTP request.",
+          "how": "The client signs the request and publishes public keys in a directory. The Signature-Agent header points at that directory. Cloudflare's docs describe transitive trust from the site owner to the bot operator to the end user, and an experimental Forwarded header that names the operator.",
+          "issuer": "The bot or agent operator hosts the keys. Cloudflare verifies bots that register a directory with it.",
+          "status": "Draft spec, Cloudflare documents verification",
+          "sources": [
+            {
+              "title": "IETF draft for HTTP Message Signatures for automated traffic",
+              "url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/"
+            },
+            {
+              "title": "Cloudflare Web Bot Auth documentation",
+              "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
+            }
+          ]
+        },
+        {
+          "name": "x401",
+          "listing": "x401",
+          "glossary": null,
+          "verified": "A credential the verifier requested, such as personhood, residency, membership, or organizational standing. Binding an agent identifier is optional. Payment stays on HTTP 402.",
+          "how": "The server sends a PROOF-REQUEST header carrying an OpenID4VP request. The agent returns a PROOF-RESPONSE. The draft is version 0.2.0.",
+          "issuer": "The verifier names trusted authorities in the request.",
+          "status": "Draft, version 0.2.0",
+          "sources": [
+            {
+              "title": "x401 HTTP proof requirement protocol",
+              "url": "https://x401.proof.com/spec/latest/"
+            }
+          ]
+        }
+      ],
+      "developments": [
+        {
+          "date": "2026-10-20",
+          "text": "On 2026-10-20, Visa said a live pilot with BILL and Billtrust registers the BILL Payment Agent using Trusted Agent Protocol and the Agentic Directory. Billtrust uses the protocol to authenticate that agent at supplier portals.",
+          "source": {
+            "title": "Visa press release on the BILL and Billtrust pilot, 2026-10-20",
+            "url": "https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-bill-billtrust-launch-pilot.html"
+          }
+        },
+        {
+          "date": "2026-10-19",
+          "text": "On 2026-10-19, Skyfire and Forter said Forter's Fraud Management for Agentic Commerce ingests Skyfire Know Your Agent protocol data to enrich decisioning on agentic purchases.",
+          "source": {
+            "title": "Skyfire and Forter Business Wire release, 2026-10-19",
+            "url": "https://www.businesswire.com/news/home/20261019685711/en/Skyfire-and-Forter-Enrich-Trusted-Agentic-Commerce-Decisions-at-Checkout"
+          }
+        },
+        {
+          "date": "2026-10-02",
+          "text": "On 2026-10-02, the IETF published draft-skyfire-oauth-kyapay-token-02. The draft defines a JWT format for agent identity and payment tokens. It is an Internet-Draft.",
+          "source": {
+            "title": "KYAPay token Internet-Draft",
+            "url": "https://datatracker.ietf.org/doc/html/draft-skyfire-oauth-kyapay-token"
+          }
+        },
+        {
+          "date": "2026-09-30",
+          "text": "On 2026-09-30, Beltic said it emerged from stealth with a Know Your Agent platform that verifies an agent's identity, authority, and transactional legitimacy. The release says design partners get early access.",
+          "source": {
+            "title": "Beltic press release, 2026-09-30",
+            "url": "https://www.prnewswire.com/news-releases/beltic-emerges-from-stealth-to-secure-autonomous-agent-transactions-at-scale-302893772.html"
+          }
+        },
+        {
+          "date": "2026-09-30",
+          "text": "On 2026-09-30, Mastercard said it is working with Skyfire, which it calls a provider of Know Your Agent technology, so financial institutions and merchants can recognize trusted agents.",
+          "source": {
+            "title": "Mastercard press release, 2026-09-30",
+            "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/september/new-trust-and-intelligence-services.html"
+          }
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is Know Your Agent?",
+          "answer": "Know Your Agent is the check a merchant or service runs before it lets an agent transact. The check asks which agent is acting, on whose behalf, and with what authority."
+        },
+        {
+          "question": "Does this page rank the approaches?",
+          "answer": "No. The approaches are listed alphabetically by name. Nothing on this page is scored."
+        },
+        {
+          "question": "When was this page last verified?",
+          "answer": "Last verified 2026-10-21."
+        }
+      ]
+    }
+  },
+  {
     "slug": "kyapay",
     "term": "KYAPay",
     "definition": "Signed token from Skyfire that binds an agent identity to a payment the buyer has committed. The seller charges the token after delivery.",
@@ -230,20 +562,20 @@
       "url": "https://docs.skyfire.xyz/docs/kyapay-tokens"
     },
     "listings": ["skyfire"],
-    "related": ["agent-identity", "agent-wallet"],
+    "related": ["agent-identity", "agent-wallet", "know-your-agent"],
     "last_verified": "2026-10-17"
   },
   {
     "slug": "l402",
     "term": "L402",
-    "definition": "HTTP 402 flow from Lightning Labs. The server returns a macaroon and a Lightning invoice. The client pays, then presents the preimage so the server can check payment without a lookup.",
+    "definition": "HTTP 402 flow from Lightning Labs. The server returns a bearer token, recommended as a macaroon, and a Lightning invoice bound by the payment hash. The client pays, then presents the preimage so the server can check payment without a lookup.",
     "source": {
       "title": "Lightning Labs L402 documentation",
       "url": "https://docs.lightning.engineering/the-lightning-network/l402"
     },
     "listings": ["l402"],
     "related": ["http-402"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-10-21"
   },
   {
     "slug": "machine-payments-protocol",
@@ -373,8 +705,8 @@
       "title": "Cloudflare Web Bot Auth documentation",
       "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
     },
-    "listings": ["web-bot-auth", "visa-trusted-agent-protocol"],
-    "related": ["agent-identity"],
+    "listings": ["web-bot-auth", "visa-trusted-agent-protocol", "beltic-kya"],
+    "related": ["agent-identity", "know-your-agent"],
     "last_verified": "2026-10-17"
   },
   {
@@ -385,7 +717,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry"],
     "related": ["http-402", "payment-facilitator"],
     "last_verified": "2026-10-17"
   }
