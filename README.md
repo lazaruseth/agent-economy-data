@@ -83,7 +83,7 @@ Accepted corrections are applied to the site first, then synced back here at the
 
 Run by Max Curnin, Executive Chairman of Accords. Accords is listed under the same criteria as every other entry and is never ranked or styled differently.
 
-The site sells labeled sponsor slots. Sponsor placements are not part of this dataset, do not change listing order, and never appear in these files.
+Sponsor placements are not part of this dataset, do not change listing order, and never appear in these files.
 
 ## License
 
