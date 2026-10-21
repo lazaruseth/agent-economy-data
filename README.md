@@ -36,7 +36,7 @@ Each item in `listings`:
 | :- | :- | :- |
 | `name` | string | Product or protocol name. |
 | `slug` | string | Stable identifier, used by every other file. |
-| `category` | string | One of `exchanges`, `frameworks`, `governance`, `identity`, `payment-rails`, `protocols`. |
+| `category` | string | One of `exchanges`, `exchanges-with-agent-access`, `frameworks`, `governance`, `identity`, `payment-rails`, `protocols`. |
 | `tags` | string[] | Mechanism tags such as `http-402`, `spend-limits`, `stablecoins`. |
 | `summary` | string | What it does, stated as a mechanism. |
 | `status` | string | `live`, `beta`, or `designed`. |
