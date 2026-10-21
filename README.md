@@ -23,6 +23,7 @@ The site code is not in this repository. Only the data is published.
 | `data/comparisons.json` | Same category listing pairs that have a comparison page on the site. |
 | `data/glossary.json` | Sourced definitions for agent economy terms, linked to listings. |
 | `data/protocol-compatibility.json` | Protocol compatibility matrix, 27 rows. Every cell carries its own sources and verified date. Same as the live export at https://theagenteconomy.si/data/protocol-compatibility.json. |
+| `data/gaps.json` | Documentation gaps, 18 notes across 7 dimensions. Each cell is Documented, Not documented, Mixed, or Omitted, with its source and the day it was read. Same as the live export at https://theagenteconomy.si/data/gaps.json. |
 
 ## Fields
 

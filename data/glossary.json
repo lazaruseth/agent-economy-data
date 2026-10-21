@@ -31,7 +31,7 @@
       "title": "Overview of agent identities in Microsoft Entra",
       "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-identities"
     },
-    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol", "x401"],
+    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol", "x401", "servicenow-ai-passport"],
     "related": ["agntcy", "did", "erc-8004", "know-your-agent", "kyapay", "web-bot-auth"],
     "last_verified": "2026-10-17"
   },
