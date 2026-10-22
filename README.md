@@ -24,6 +24,7 @@ The site code is not in this repository. Only the data is published.
 | `data/glossary.json` | Sourced definitions for agent economy terms, linked to listings. |
 | `data/protocol-compatibility.json` | Protocol compatibility matrix, 28 rows. Every cell carries its own sources and verified date. Same as the live export at https://theagenteconomy.si/data/protocol-compatibility.json. |
 | `data/gaps.json` | Documentation gaps, 22 notes across 7 dimensions. Each cell is Documented, Not documented, Mixed, or Omitted, with its source and the day it was read. Same as the live export at https://theagenteconomy.si/data/gaps.json. |
+| `data/agent-payment-protocols.json` | Agent payment protocols, x402, MPP, and ACP side by side with AP2 and L402, across 9 dimensions. Not documented means the checked page does not state the fact. The file does not quote x402 volume. Same as the live export at https://theagenteconomy.si/data/agent-payment-protocols.json. |
 
 ## Fields
 
