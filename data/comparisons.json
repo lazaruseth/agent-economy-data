@@ -2,6 +2,7 @@
   { "a": "a2a", "b": "agntcy" },
   { "a": "a2a", "b": "anp" },
   { "a": "a2a", "b": "mcp" },
+  { "a": "mcp", "b": "webmcp" },
   { "a": "agentic-commerce-protocol", "b": "ucp" },
   { "a": "akash-network", "b": "gensyn" },
   { "a": "akash-network", "b": "render-network" },
