@@ -26,6 +26,7 @@ The site code is not in this repository. Only the data is published.
 | `data/gaps.json` | Documentation gaps, 22 notes across 7 dimensions. Each cell is Documented, Not documented, Mixed, or Omitted, with its source and the day it was read. Same as the live export at https://theagenteconomy.si/data/gaps.json. |
 | `data/agent-payment-protocols.json` | Agent payment protocols, x402, MPP, and ACP side by side with AP2 and L402, across 9 dimensions. Not documented means the checked page does not state the fact. The file does not quote x402 volume. Same as the live export at https://theagenteconomy.si/data/agent-payment-protocols.json. |
 | `data/changes.json` | Weekly record of directory changes, newest week first. Each entry has a date and an internal path. Counts cover listings added, status changes, re-verified listings, gap notes, compare pages, tools, and concept pages. RSS feed at https://theagenteconomy.si/changes/feed.xml. Same as the live export at https://theagenteconomy.si/data/changes.json. |
+| `data/agent-credentials.json` | Agent credentials compared, 8 products that let an agent call a service without storing that service's long-lived secret. Not documented means the linked page does not state the fact. Rows are alphabetical by product. Same as the live export at https://theagenteconomy.si/data/agent-credentials.json. |
 
 ## Fields
 
