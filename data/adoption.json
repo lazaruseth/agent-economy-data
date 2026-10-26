@@ -288,5 +288,26 @@
       }
     ],
     "checked": "2026-10-20"
+  },
+  {
+    "slug": "payai-x402-facilitator",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "px402",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "stabletrust-api",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-26"
   }
 ]

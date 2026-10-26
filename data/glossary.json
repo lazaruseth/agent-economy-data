@@ -67,7 +67,7 @@
       "title": "Tempo Wallet agent documentation",
       "url": "https://tempo.xyz/developers/docs/wallet/recipes"
     },
-    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli"],
+    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api"],
     "related": ["kyapay", "machine-payments-protocol", "spend-limit"],
     "last_verified": "2026-10-17"
   },
@@ -211,7 +211,7 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator"],
     "related": ["l402", "machine-payments-protocol", "x402"],
     "last_verified": "2026-10-17"
   },
@@ -651,7 +651,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined"],
+    "listings": ["x402", "nevermined", "payai-x402-facilitator"],
     "related": ["x402"],
     "last_verified": "2026-10-17"
   },
@@ -735,7 +735,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator"],
     "related": ["http-402", "payment-facilitator"],
     "last_verified": "2026-10-17"
   }
