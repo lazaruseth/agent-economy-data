@@ -67,9 +67,21 @@
       "title": "Tempo Wallet agent documentation",
       "url": "https://tempo.xyz/developers/docs/wallet/recipes"
     },
-    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api"],
-    "related": ["kyapay", "machine-payments-protocol", "spend-limit"],
+    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport"],
+    "related": ["kyapay", "machine-payments-protocol", "spend-limit", "agent-checkout"],
     "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "agent-checkout",
+    "term": "Agent checkout",
+    "definition": "A checkout an agent runs at a merchant for a user, with a cap set before payment. Crossmint Agent Checkouts sends a start URL, a task, and that cap, and the agent does not hold the card number.",
+    "source": {
+      "title": "Crossmint Agent Checkouts",
+      "url": "https://docs.crossmint.com/agents/checkouts"
+    },
+    "listings": ["crossmint-agent-checkout"],
+    "related": ["agent-wallet", "ucp"],
+    "last_verified": "2026-10-27"
   },
   {
     "slug": "agentic-commerce-protocol",
@@ -211,7 +223,7 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport"],
     "related": ["l402", "machine-payments-protocol", "x402"],
     "last_verified": "2026-10-17"
   },
@@ -712,7 +724,7 @@
       "url": "https://ucp.dev/latest/specification/overview/"
     },
     "listings": ["ucp", "ap2"],
-    "related": ["a2a", "agentic-commerce-protocol", "ap2", "mcp"],
+    "related": ["a2a", "agentic-commerce-protocol", "ap2", "mcp", "agent-checkout"],
     "last_verified": "2026-10-17"
   },
   {
@@ -735,7 +747,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport"],
     "related": ["http-402", "payment-facilitator"],
     "last_verified": "2026-10-17"
   }

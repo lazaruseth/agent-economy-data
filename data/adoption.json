@@ -309,5 +309,19 @@
     "measured": "UNKNOWN",
     "notes": [],
     "checked": "2026-10-26"
+  },
+  {
+    "slug": "crossmint-agent-checkout",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-27"
+  },
+  {
+    "slug": "kite-agent-passport",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-27"
   }
 ]
