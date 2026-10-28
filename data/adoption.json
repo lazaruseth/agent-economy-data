@@ -323,5 +323,12 @@
     "measured": "UNKNOWN",
     "notes": [],
     "checked": "2026-10-27"
+  },
+  {
+    "slug": "mercury-mcp",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-28"
   }
 ]

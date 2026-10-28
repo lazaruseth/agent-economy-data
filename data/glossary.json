@@ -235,7 +235,7 @@
       "title": "LangGraph overview",
       "url": "https://docs.langchain.com/oss/python/langgraph/overview"
     },
-    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway"],
+    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents"],
     "related": ["guardrail", "multi-agent", "tool-call"],
     "last_verified": "2026-10-17"
   },
@@ -627,7 +627,7 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault"],
     "related": ["json-rpc", "personal-agent-protocol", "tool-call", "ucp"],
     "last_verified": "2026-10-17"
   },
