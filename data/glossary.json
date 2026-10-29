@@ -79,9 +79,9 @@
       "title": "Crossmint Agent Checkouts",
       "url": "https://docs.crossmint.com/agents/checkouts"
     },
-    "listings": ["crossmint-agent-checkout"],
-    "related": ["agent-wallet", "ucp"],
-    "last_verified": "2026-10-27"
+    "listings": ["crossmint-agent-checkout", "shop-mcp"],
+    "related": ["agent-wallet", "ucp", "spend-request"],
+    "last_verified": "2026-10-29"
   },
   {
     "slug": "agentic-commerce-protocol",
@@ -235,9 +235,9 @@
       "title": "LangGraph overview",
       "url": "https://docs.langchain.com/oss/python/langgraph/overview"
     },
-    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents"],
-    "related": ["guardrail", "multi-agent", "tool-call"],
-    "last_verified": "2026-10-17"
+    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp"],
+    "related": ["guardrail", "multi-agent", "tool-call", "spend-request"],
+    "last_verified": "2026-10-29"
   },
   {
     "slug": "json-rpc",
@@ -628,9 +628,9 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp"],
     "related": ["json-rpc", "personal-agent-protocol", "tool-call", "ucp"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-10-29"
   },
   {
     "slug": "multi-agent",
@@ -700,9 +700,27 @@
       "title": "LiteLLM proxy budgets",
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
-    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway"],
-    "related": ["agent-wallet"],
-    "last_verified": "2026-10-17"
+    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp"],
+    "related": ["agent-wallet", "spend-request"],
+    "last_verified": "2026-10-29"
+  },
+  {
+    "slug": "spend-request",
+    "term": "Spend request",
+    "definition": "A request an agent creates for one purchase. It names the payee, the items or totals, and the most the card can be charged. The buyer approves it, then the service issues a one time card or payment credential for that purchase.",
+    "source": {
+      "title": "Approve a purchase outside Shopify",
+      "url": "https://shop.dev/docs/approvals"
+    },
+    "more_sources": [
+      {
+        "title": "stripe/link-cli README",
+        "url": "https://github.com/stripe/link-cli/blob/main/README.md"
+      }
+    ],
+    "listings": ["shop-mcp", "stripe-link-cli"],
+    "related": ["human-approval", "spend-limit", "agent-checkout"],
+    "last_verified": "2026-10-29"
   },
   {
     "slug": "tool-call",
@@ -724,9 +742,9 @@
       "title": "Universal Commerce Protocol specification",
       "url": "https://ucp.dev/latest/specification/overview/"
     },
-    "listings": ["ucp", "ap2"],
+    "listings": ["ucp", "ap2", "shop-mcp"],
     "related": ["a2a", "agentic-commerce-protocol", "ap2", "mcp", "agent-checkout"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-10-29"
   },
   {
     "slug": "web-bot-auth",

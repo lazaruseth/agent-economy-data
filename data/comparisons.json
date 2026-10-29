@@ -21,6 +21,7 @@
   { "a": "olas-mech-marketplace", "b": "virtuals-protocol", "added": "2026-10-17" },
   { "a": "pact", "b": "personal-agent-protocol", "added": "2026-10-17" },
   { "a": "pydantic-ai", "b": "smolagents", "added": "2026-10-17" },
+  { "a": "shop-mcp", "b": "stripe-link-cli", "added": "2026-10-29" },
   { "a": "skyfire", "b": "tempo-wallet", "added": "2026-10-17" },
   { "a": "visa-trusted-agent-protocol", "b": "web-bot-auth", "added": "2026-10-19" }
 ]

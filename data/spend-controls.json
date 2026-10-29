@@ -1,7 +1,7 @@
 {
   "title": "Agent spend controls compared",
   "added": "2026-10-19",
-  "updated": "2026-10-20",
+  "updated": "2026-10-29",
   "rows": [
     {
       "product": "Agent Vault",
@@ -167,17 +167,17 @@
       "listing_slug": "coinbase-agentic-wallet",
       "per_payment_cap": {
         "value": "Yes",
-        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/mcp/quickstart",
-        "source_title": "Coinbase Agentic Wallet MCP quickstart",
-        "checked": "2026-10-19",
-        "note": "Wallet UI setting Max per call caps a single payment."
+        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/cli/welcome",
+        "source_title": "Coinbase Agentic Wallet CLI documentation",
+        "checked": "2026-10-29",
+        "note": "The CLI welcome page states a configurable cap per transaction."
       },
       "period_budget": {
         "value": "Yes",
-        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/mcp/quickstart",
-        "source_title": "Coinbase Agentic Wallet MCP quickstart",
-        "checked": "2026-10-19",
-        "note": "Wallet UI setting Max per session caps spending for that session."
+        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/cli/welcome",
+        "source_title": "Coinbase Agentic Wallet CLI documentation",
+        "checked": "2026-10-29",
+        "note": "The CLI welcome page states a configurable cap per session."
       },
       "allowlist": {
         "value": "UNKNOWN",
@@ -204,14 +204,14 @@
         "value": "Keys in Coinbase infrastructure",
         "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/cli/welcome",
         "source_title": "Coinbase Agentic Wallet CLI documentation",
-        "checked": "2026-10-19",
+        "checked": "2026-10-29",
         "note": "Security section says private keys stay in Coinbase infrastructure."
       },
       "rails": {
         "values": ["x402", "onchain transfer"],
         "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/cli/welcome",
         "source_title": "Coinbase Agentic Wallet CLI documentation",
-        "checked": "2026-10-19",
+        "checked": "2026-10-29",
         "note": "The CLI lists sending stablecoins and paying x402 services."
       }
     },
@@ -531,6 +531,59 @@
         "source_title": "Polygon Agent CLI reference",
         "checked": "2026-10-19",
         "note": "The CLI reference documents x402 payments and native or token sends."
+      }
+    },
+    {
+      "product": "Shop MCP",
+      "listing_slug": "shop-mcp",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://shop.dev/docs/approvals",
+        "source_title": "Approve a purchase outside Shopify",
+        "checked": "2026-10-29",
+        "note": "approval_limit is the most the issued card can be charged."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://help.shop.app/en/shop/shopping/personal-agents",
+        "source_title": "Using Shop with AI agents and agentic platforms",
+        "checked": "2026-10-29",
+        "note": "Allow agent to pay for me can use a weekly, monthly, or total budget."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-29",
+        "note": "The budget setting does not state a payee or merchant allowlist."
+      },
+      "approval_threshold": {
+        "value": "Yes",
+        "source_url": "https://help.shop.app/en/shop/shopping/personal-agents",
+        "source_title": "Using Shop with AI agents and agentic platforms",
+        "checked": "2026-10-29",
+        "note": "By default the buyer approves every purchase. Allow agent to pay for me is optional."
+      },
+      "revoke": {
+        "value": "Partial",
+        "source_url": "https://help.shop.app/en/shop/shopping/personal-agents",
+        "source_title": "Using Shop with AI agents and agentic platforms",
+        "checked": "2026-10-29",
+        "note": "The buyer can disconnect an agent in Connections and can revoke the budget permission."
+      },
+      "custody": {
+        "value": "One time credential",
+        "source_url": "https://shopify.dev/docs/agents/carts-and-checkout/shop-pay",
+        "source_title": "Shop Pay",
+        "checked": "2026-10-29",
+        "note": "The buyer approves each purchase and the agent gets a one time credential, including outside Shopify."
+      },
+      "rails": {
+        "values": ["cards"],
+        "source_url": "https://shop.dev/docs/approvals",
+        "source_title": "Approve a purchase outside Shopify",
+        "checked": "2026-10-29",
+        "note": "An approved spend request returns a card paid by the buyer's saved card."
       }
     },
     {
