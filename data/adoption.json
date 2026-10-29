@@ -157,78 +157,78 @@
     "slug": "x402",
     "claimed": [
       {
-        "metric": "Transactions, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
+        "metric": "Transactions, historical Last 30 Days panel, shown through at least 2026-10-20 and no longer published as of 2026-10-29",
         "value": "75.41M",
         "as_of": null,
         "source_url": "https://x402.org/",
-        "source_title": "x402.org Last 30 Days panel",
+        "source_title": "x402.org historical Last 30 Days panel",
         "measured_by": "x402",
         "checked": "2026-10-20"
       },
       {
-        "metric": "Volume, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
+        "metric": "Volume, historical Last 30 Days panel, shown through at least 2026-10-20 and no longer published as of 2026-10-29",
         "value": "$24.24M",
         "as_of": null,
         "source_url": "https://x402.org/",
-        "source_title": "x402.org Last 30 Days panel",
+        "source_title": "x402.org historical Last 30 Days panel",
         "measured_by": "x402",
         "checked": "2026-10-20"
       },
       {
-        "metric": "Buyers, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
+        "metric": "Buyers, historical Last 30 Days panel, shown through at least 2026-10-20 and no longer published as of 2026-10-29",
         "value": "94.06K",
         "as_of": null,
         "source_url": "https://x402.org/",
-        "source_title": "x402.org Last 30 Days panel",
+        "source_title": "x402.org historical Last 30 Days panel",
         "measured_by": "x402",
         "checked": "2026-10-20"
       },
       {
-        "metric": "Sellers, labeled Last 30 Days, panel unchanged since an April 17 2026 archive capture",
+        "metric": "Sellers, historical Last 30 Days panel, shown through at least 2026-10-20 and no longer published as of 2026-10-29",
         "value": "22K",
         "as_of": null,
         "source_url": "https://x402.org/",
-        "source_title": "x402.org Last 30 Days panel",
+        "source_title": "x402.org historical Last 30 Days panel",
         "measured_by": "x402",
         "checked": "2026-10-20"
       }
     ],
     "measured": [
       {
-        "metric": "Transactions, past 30 days",
-        "value": "3.03M",
-        "as_of": null,
+        "metric": "Transactions, Past 30 Days, latest block 2026-10-29T10:45:45.000Z",
+        "value": "3,247,612",
+        "as_of": "2026-10-29",
         "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
-        "checked": "2026-10-20"
+        "checked": "2026-10-29"
       },
       {
-        "metric": "Volume, past 30 days",
-        "value": "$1.41M",
-        "as_of": null,
+        "metric": "Volume, Past 30 Days, latest block 2026-10-29T10:45:45.000Z",
+        "value": "$1.58M",
+        "as_of": "2026-10-29",
         "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
-        "checked": "2026-10-20"
+        "checked": "2026-10-29"
       },
       {
-        "metric": "Buyers, past 30 days",
-        "value": "35.81K",
-        "as_of": null,
+        "metric": "Buyers, Past 30 Days, latest block 2026-10-29T10:45:45.000Z",
+        "value": "33,076",
+        "as_of": "2026-10-29",
         "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
-        "checked": "2026-10-20"
+        "checked": "2026-10-29"
       },
       {
-        "metric": "Sellers, past 30 days",
-        "value": "38K",
-        "as_of": null,
+        "metric": "Sellers, Past 30 Days, latest block 2026-10-29T10:45:45.000Z",
+        "value": "13,228",
+        "as_of": "2026-10-29",
         "source_url": "https://www.x402scan.com/",
         "source_title": "x402scan overall stats",
         "measured_by": "x402scan",
-        "checked": "2026-10-20"
+        "checked": "2026-10-29"
       },
       {
         "metric": "Cumulative raw onchain volume since May 2025",
@@ -287,7 +287,7 @@
         "date": "2026-09-27"
       }
     ],
-    "checked": "2026-10-20"
+    "checked": "2026-10-29"
   },
   {
     "slug": "payai-x402-facilitator",
