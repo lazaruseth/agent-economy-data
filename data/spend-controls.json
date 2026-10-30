@@ -1,7 +1,7 @@
 {
   "title": "Agent spend controls compared",
   "added": "2026-10-19",
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "rows": [
     {
       "product": "Agent Vault",
@@ -665,10 +665,10 @@
       },
       "approval_threshold": {
         "value": "Yes",
-        "source_url": "https://github.com/stripe/link-cli/blob/main/README.md",
-        "source_title": "stripe/link-cli README",
-        "checked": "2026-10-19",
-        "note": "Docs require customer approval of a spend request. A policy can allow creates under a per purchase limit without manual approval."
+        "source_url": "https://support.link.com/questions/set-up-a-balance-for-agent-wallet-purchases",
+        "source_title": "Set up a balance for agent wallet purchases",
+        "checked": "2026-10-30",
+        "note": "The user sets a per purchase limit. The agent can skip approval at or under it. Purchases above it still need approval. A limit of $0 prevents skipping."
       },
       "revoke": {
         "value": "UNKNOWN",
@@ -849,6 +849,59 @@
         "source_title": null,
         "checked": "2026-10-20",
         "note": "The Visa getting started page describes agent signatures and does not state this control."
+      }
+    },
+    {
+      "product": "Wavelength",
+      "listing_slug": "wavelength",
+      "per_payment_cap": {
+        "value": "Partial",
+        "source_url": "https://lightning.engineering/posts/2026-10-23-wavelength-mainnet-launch/",
+        "source_title": "Lightning Labs: Wavelength on mainnet, 23 October 2026",
+        "checked": "2026-10-30",
+        "note": "Mainnet account cap is 300,000 sats and each VTXO cap is 50,000 sats. A per payment cap is not stated."
+      },
+      "period_budget": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-30",
+        "note": "The 23 October 2026 post does not state a daily, weekly, or session budget."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-30",
+        "note": "A receive only macaroon is documented. A payee allowlist for a sending credential is not."
+      },
+      "approval_threshold": {
+        "value": "No",
+        "source_url": "https://lightning.engineering/posts/2026-10-23-wavelength-mainnet-launch/",
+        "source_title": "Lightning Labs: Wavelength on mainnet, 23 October 2026",
+        "checked": "2026-10-30",
+        "note": "The 23 October 2026 post says an agent pays with no human approving each transaction."
+      },
+      "revoke": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-10-30",
+        "note": "The bakemacaroon page sets a client side expiry. It does not document revoking a baked macaroon."
+      },
+      "custody": {
+        "value": "Self-custodial client",
+        "source_url": "https://wavelength.lightning.engineering/introduction/the-wavelength-system/",
+        "source_title": "The Wavelength system",
+        "checked": "2026-10-30",
+        "note": "The client holds the keys. Exit moves funds on chain without anyone's permission."
+      },
+      "rails": {
+        "values": ["Lightning"],
+        "source_url": "https://lightning.engineering/posts/2026-10-23-wavelength-mainnet-launch/",
+        "source_title": "Lightning Labs: Wavelength on mainnet, 23 October 2026",
+        "checked": "2026-10-30",
+        "note": "The 23 October 2026 post says bitcoin over Lightning. Stablecoins are coming soon, not live."
       }
     }
   ]

@@ -223,9 +223,9 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength"],
     "related": ["l402", "machine-payments-protocol", "x402"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-10-30"
   },
   {
     "slug": "human-approval",
@@ -604,9 +604,9 @@
       "title": "Lightning Labs L402 documentation",
       "url": "https://docs.lightning.engineering/the-lightning-network/l402"
     },
-    "listings": ["l402"],
+    "listings": ["l402", "wavelength"],
     "related": ["http-402"],
-    "last_verified": "2026-10-21"
+    "last_verified": "2026-10-30"
   },
   {
     "slug": "machine-payments-protocol",
@@ -628,9 +628,9 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength"],
     "related": ["json-rpc", "personal-agent-protocol", "tool-call", "ucp"],
-    "last_verified": "2026-10-29"
+    "last_verified": "2026-10-30"
   },
   {
     "slug": "multi-agent",
@@ -769,5 +769,17 @@
     "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport"],
     "related": ["http-402", "payment-facilitator"],
     "last_verified": "2026-10-17"
+  },
+  {
+    "slug": "payment-receipt",
+    "term": "Payment receipt",
+    "definition": "A receipt produced for every payment. Celestia's Voyager post says its single node benchmark produces one for every payment, and that real time status queries are not built yet.",
+    "source": {
+      "title": "Introducing Voyager: Hyperscale Payments for Agentic Commerce",
+      "url": "https://blog.celestia.org/introducing-voyager-hyperscale-payments-for-agentic-commerce/"
+    },
+    "listings": ["celestia-voyager"],
+    "related": [],
+    "last_verified": "2026-10-30"
   }
 ]

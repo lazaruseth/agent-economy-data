@@ -337,5 +337,19 @@
     "measured": "UNKNOWN",
     "notes": [],
     "checked": "2026-10-29"
+  },
+  {
+    "slug": "celestia-voyager",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-30"
+  },
+  {
+    "slug": "wavelength",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-10-30"
   }
 ]
