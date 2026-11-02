@@ -12,6 +12,18 @@
     "last_verified": "2026-10-17"
   },
   {
+    "slug": "approval-channel",
+    "term": "Approval channel",
+    "definition": "An approval channel is the path that carries human approval for an agent action. The I-HITL paper says that path must end at a trusted entity the agent cannot reach.",
+    "source": {
+      "title": "I-HITL: Inalienable Human-in-the-Loop",
+      "url": "https://arxiv.org/abs/2610.35835"
+    },
+    "listings": ["agent-vault", "agentcard-opencommerce", "circle-agent-wallets", "coinbase-agentic-wallet", "ledger-agent-intent", "metamask-agent-wallet", "mpp", "nevermined", "stripe-link-cli", "tempo-wallet", "visa-intelligent-commerce"],
+    "related": ["human-approval", "spend-limit"],
+    "last_verified": "2026-11-02"
+  },
+  {
     "slug": "agent-card",
     "term": "Agent Card",
     "definition": "JSON document in A2A that lists an agent's identity, capabilities, endpoint, skills, and authentication requirements so a client can decide how to call it.",
@@ -55,7 +67,7 @@
       "title": "Olas Mech Marketplace",
       "url": "https://olas.network/mech-marketplace"
     },
-    "listings": ["olas-mech-marketplace", "virtuals-protocol"],
+    "listings": ["kleros-escrow", "olas-mech-marketplace", "pactwright", "termix", "vangrid", "virtuals-protocol"],
     "related": ["compute-marketplace"],
     "last_verified": "2026-10-17"
   },
@@ -67,7 +79,7 @@
       "title": "Tempo Wallet agent documentation",
       "url": "https://tempo.xyz/developers/docs/wallet/recipes"
     },
-    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport"],
+    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets"],
     "related": ["kyapay", "machine-payments-protocol", "spend-limit", "agent-checkout"],
     "last_verified": "2026-10-17"
   },
@@ -236,7 +248,7 @@
       "url": "https://docs.langchain.com/oss/python/langgraph/overview"
     },
     "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp", "agentcard-opencommerce"],
-    "related": ["guardrail", "multi-agent", "tool-call", "spend-request"],
+    "related": ["guardrail", "multi-agent", "tool-call", "spend-request", "approval-channel"],
     "last_verified": "2026-11-02"
   },
   {
@@ -701,7 +713,7 @@
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
     "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce"],
-    "related": ["agent-wallet", "spend-request"],
+    "related": ["agent-wallet", "spend-request", "approval-channel"],
     "last_verified": "2026-11-02"
   },
   {

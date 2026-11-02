@@ -49,11 +49,21 @@
         "note": "The card number stays in a vault. The agent receives a mock token."
       },
       "rails": {
-        "values": ["cards"],
+        "values": [
+          "cards"
+        ],
         "source_url": "https://docs.agentvault.io/",
         "source_title": "What is Agent Vault",
         "checked": "2026-10-20",
         "note": "The proxy types the real card into the merchant page after the rules pass."
+      },
+      "cap_change": {
+        "value": "Dashboard login",
+        "agent_reachable": "No",
+        "note": "The spending limits card links to the dashboard agent cards page. The overview does not give the agent a tool that edits those caps.",
+        "source_url": "https://docs.agentvault.io/",
+        "source_title": "What is Agent Vault",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -102,11 +112,21 @@
         "note": "The shopper saves a card in the Agentcard Vault, and Agentcard places the order with that card."
       },
       "rails": {
-        "values": ["cards"],
+        "values": [
+          "cards"
+        ],
         "source_url": "https://docs.agentcard.com/commerce-sdk/guides/approving-a-purchase",
         "source_title": "Approving a purchase",
         "checked": "2026-11-02",
         "note": "Agentcard places the order with the shopper's saved card."
+      },
+      "cap_change": {
+        "value": "Passkey or device approval",
+        "agent_reachable": "No",
+        "note": "The shopper approves the payment on their phone with a passkey. The page does not give the agent that passkey.",
+        "source_url": "https://docs.agentcard.com/commerce-sdk/guides/approving-a-purchase",
+        "source_title": "Approving a purchase",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -155,11 +175,21 @@
         "note": "The endpoint tokenizes a card and returns a vault token."
       },
       "rails": {
-        "values": ["cards"],
+        "values": [
+          "cards"
+        ],
         "source_url": "https://www.agenticcommerce.dev/docs/reference/payments",
         "source_title": "ACP delegate payment",
         "checked": "2026-10-20",
         "note": "The payment method type in this schema is card."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "Not documented as of 2026-11-02",
+        "note": "The ACP delegate payment page states max_amount on an allowance. It does not state a channel that raises that amount.",
+        "source_url": "https://www.agenticcommerce.dev/docs/reference/payments",
+        "source_title": "ACP delegate payment",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -208,11 +238,85 @@
         "note": "The shopping agent creates the mandate content and a trusted surface renders it to the user."
       },
       "rails": {
-        "values": ["cards", "x402"],
+        "values": [
+          "cards",
+          "x402"
+        ],
         "source_url": "https://ap2-protocol.org/",
         "source_title": "AP2 protocol documentation",
         "checked": "2026-10-20",
         "note": "The AP2 site says the first version supports card pull payments and links an x402 sample."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "Not documented as of 2026-11-02",
+        "note": "The payment mandate page says a trusted surface renders the mandate to the user. It does not name a channel that later raises the amount range.",
+        "source_url": "https://ap2-protocol.org/ap2/payment_mandate/",
+        "source_title": "AP2 payment mandate",
+        "checked": "2026-11-02"
+      }
+    },
+    {
+      "product": "Circle Agent Wallets",
+      "listing_slug": "circle-agent-wallets",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://developers.circle.com/agent-stack/agent-wallets/wallet-operations/custom-policies",
+        "source_title": "How-to: Set spending policies",
+        "checked": "2026-11-02",
+        "note": "The page states a per transaction cap on USDC transfers, set with the CLI."
+      },
+      "period_budget": {
+        "value": "Yes",
+        "source_url": "https://developers.circle.com/agent-stack/agent-wallets/wallet-operations/custom-policies",
+        "source_title": "How-to: Set spending policies",
+        "checked": "2026-11-02",
+        "note": "The page states daily, weekly, and monthly caps on USDC transfers."
+      },
+      "allowlist": {
+        "value": "Yes",
+        "source_url": "https://developers.circle.com/agent-stack/agent-wallets/wallet-operations/custom-policies",
+        "source_title": "How-to: Set spending policies",
+        "checked": "2026-11-02",
+        "note": "The page states recipient allowlists and blocklists, and contract address lists."
+      },
+      "approval_threshold": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-11-02",
+        "note": "These pages do not state human approval of a payment above a threshold."
+      },
+      "revoke": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-11-02",
+        "note": "The spending policies and authenticate pages do not state a revoke call."
+      },
+      "custody": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-11-02",
+        "note": "The authenticate page does not state where wallet keys are held."
+      },
+      "rails": {
+        "values": [
+          "onchain transfer"
+        ],
+        "source_url": "https://developers.circle.com/agent-stack/agent-wallets/wallet-operations/custom-policies",
+        "source_title": "How-to: Set spending policies",
+        "checked": "2026-11-02",
+        "note": "The policies page says the wallet moves USDC."
+      },
+      "cap_change": {
+        "value": "Emailed OTP",
+        "agent_reachable": "Depends on setup",
+        "note": "Circle sends an email one time password. Anyone who can read that inbox can change spending policies. The page says to enter the code yourself.",
+        "source_url": "https://developers.circle.com/agent-stack/agent-wallets/wallet-operations/authenticate",
+        "source_title": "How-to: Authenticate an agent wallet",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -261,11 +365,22 @@
         "note": "Security section says private keys stay in Coinbase infrastructure."
       },
       "rails": {
-        "values": ["x402", "onchain transfer"],
+        "values": [
+          "x402",
+          "onchain transfer"
+        ],
         "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/cli/welcome",
         "source_title": "Coinbase Agentic Wallet CLI documentation",
         "checked": "2026-10-29",
         "note": "The CLI lists sending stablecoins and paying x402 services."
+      },
+      "cap_change": {
+        "value": "Not changeable by agent per docs",
+        "agent_reachable": "No",
+        "note": "The MCP page says agents do not have access to sensitive actions and that you stay in control of spending limits.",
+        "source_url": "https://docs.cdp.coinbase.com/agentic-wallet/mcp/welcome",
+        "source_title": "Coinbase Agentic Wallet MCP documentation",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -314,11 +429,22 @@
         "note": "The blog says the account is non custodial and keys never leave the owner wallet."
       },
       "rails": {
-        "values": ["x402", "onchain transfer"],
+        "values": [
+          "x402",
+          "onchain transfer"
+        ],
         "source_url": "https://hedera.com/blog/introducing-hedera-agent-accounts/",
         "source_title": "Introducing Hedera Agent Accounts",
         "checked": "2026-10-19",
         "note": "The blog says agents can pay in HBAR or USDC on Hedera, and that accounts can pay x402."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "Not documented as of 2026-11-02",
+        "note": "The Introducing Hedera Agent Accounts page did not load on 2026-11-02, so a cap change channel is not documented.",
+        "source_url": "https://hedera.com/blog/introducing-hedera-agent-accounts/",
+        "source_title": "Introducing Hedera Agent Accounts",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -367,11 +493,21 @@
         "note": "The agent uses a separate identity key. Wallet keys stay on the user signer."
       },
       "rails": {
-        "values": ["onchain transfer"],
+        "values": [
+          "onchain transfer"
+        ],
         "source_url": "https://developers.ledger.com/docs/ai-tools/agent-intent",
         "source_title": "How to use Ledger Agent Intent",
         "checked": "2026-10-20",
         "note": "Launch intents are sends of ETH, SOL, and tokens, plus Ethereum swaps."
+      },
+      "cap_change": {
+        "value": "Wallet or owner signature",
+        "agent_reachable": "No",
+        "note": "Your Ledger signature gives the final approval. The page says the agent cannot refill its own wallet.",
+        "source_url": "https://developers.ledger.com/docs/ai-tools/agent-intent",
+        "source_title": "How to use Ledger Agent Intent",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -420,11 +556,23 @@
         "note": "The guide shows a Tempo access key, a local private key, and a Privy wallet."
       },
       "rails": {
-        "values": ["cards", "onchain transfer", "Lightning"],
+        "values": [
+          "cards",
+          "onchain transfer",
+          "Lightning"
+        ],
         "source_url": "https://mpp.dev/",
         "source_title": "MPP protocol site",
         "checked": "2026-10-20",
         "note": "The MPP site lists Tempo stablecoins, Stripe cards, and Lightning Bitcoin."
+      },
+      "cap_change": {
+        "value": "Wallet or owner signature",
+        "agent_reachable": "No",
+        "note": "A wallet authorizes the Tempo access key, including its token spending limits. The guide does not give that authorization to the agent.",
+        "source_url": "https://mpp.dev/guides/managing-agent-spend",
+        "source_title": "Managing agent spend",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -473,11 +621,22 @@
         "note": "Server wallet keys are held in a TEE. Bring your own wallet signs with a local seed."
       },
       "rails": {
-        "values": ["x402", "onchain transfer"],
+        "values": [
+          "x402",
+          "onchain transfer"
+        ],
         "source_url": "https://docs.metamask.io/llms-agent-wallet-full.txt",
         "source_title": "MetaMask Agent Wallet documentation",
         "checked": "2026-10-19",
         "note": "Docs list x402 payments and transfers of native tokens and ERC-20s."
+      },
+      "cap_change": {
+        "value": "Passkey or device approval",
+        "agent_reachable": "No",
+        "note": "A higher limit needs 2FA. The request is an email link or a MetaMask Mobile notification. The agent cannot proceed without that response.",
+        "source_url": "https://docs.metamask.io/agent-wallet/reference/trading-modes/",
+        "source_title": "MetaMask Agent Wallet trading modes",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -526,11 +685,23 @@
         "note": "Docs name ERC-4337 smart accounts and a card delegation token."
       },
       "rails": {
-        "values": ["x402", "MPP", "cards"],
+        "values": [
+          "x402",
+          "MPP",
+          "cards"
+        ],
         "source_url": "https://nevermined.ai/docs/products/payments-facilitator/overview",
         "source_title": "Nevermined payments facilitator",
         "checked": "2026-10-19",
         "note": "The facilitator settles x402, MPP, and card delegation payments."
+      },
+      "cap_change": {
+        "value": "API key or CLI",
+        "agent_reachable": "Depends on setup",
+        "note": "A delegation update is a new API call. Visa creation also asks for a passkey or an email one time password.",
+        "source_url": "https://nevermined.ai/docs/products/payments/mandates",
+        "source_title": "Nevermined delegations",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -579,11 +750,22 @@
         "note": "The package README says private keys are not exposed to the agent context."
       },
       "rails": {
-        "values": ["x402", "onchain transfer"],
+        "values": [
+          "x402",
+          "onchain transfer"
+        ],
         "source_url": "https://agentconnect.polygon.technology/references/cli-reference.md",
         "source_title": "Polygon Agent CLI reference",
         "checked": "2026-10-19",
         "note": "The CLI reference documents x402 payments and native or token sends."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "No",
+        "note": "Setting the session allowance starts a new sign-in, by browser or chat code. The page does not say the agent completes that sign-in.",
+        "source_url": "https://agentconnect.polygon.technology/references/cli-reference.md",
+        "source_title": "Polygon Agent CLI reference",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -632,11 +814,21 @@
         "note": "The buyer approves each purchase and the agent gets a one time credential, including outside Shopify."
       },
       "rails": {
-        "values": ["cards"],
+        "values": [
+          "cards"
+        ],
         "source_url": "https://shop.dev/docs/approvals",
         "source_title": "Approve a purchase outside Shopify",
         "checked": "2026-10-29",
         "note": "An approved spend request returns a card paid by the buyer's saved card."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "No",
+        "note": "You set a weekly, monthly, or total budget in the Shop app. The page does not name that step as a passkey, signature, or API call.",
+        "source_url": "https://help.shop.app/en/shop/shopping/personal-agents",
+        "source_title": "Using Shop with AI agents and agentic platforms",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -685,11 +877,21 @@
         "note": "tokenAmount cannot exceed the balance in the buyer agent wallet."
       },
       "rails": {
-        "values": ["UNKNOWN"],
+        "values": [
+          "UNKNOWN"
+        ],
         "source_url": null,
         "source_title": null,
         "checked": "2026-10-19",
         "note": "Docs describe KYAPay token charges and do not name a rail from this column."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "Not documented as of 2026-11-02",
+        "note": "The tokenAmount page states the maximum a seller can charge for that token. It does not state a channel that raises a standing cap.",
+        "source_url": "https://docs.skyfire.xyz/reference/tokenamount",
+        "source_title": "Skyfire tokenAmount",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -738,11 +940,22 @@
         "note": "Link returns a one time credential and does not expose the customer card or bank number."
       },
       "rails": {
-        "values": ["MPP", "cards"],
+        "values": [
+          "MPP",
+          "cards"
+        ],
         "source_url": "https://github.com/stripe/link-cli/blob/main/README.md",
         "source_title": "stripe/link-cli README",
         "checked": "2026-10-19",
         "note": "The README documents card spend requests and Machine Payments Protocol charges."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "No",
+        "note": "Ask your agent to update the limit. The agent provides a link to a page where you change the amount.",
+        "source_url": "https://support.link.com/questions/set-up-a-balance-for-agent-wallet-purchases",
+        "source_title": "Set up a balance for agent wallet purchases",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -791,11 +1004,23 @@
         "note": "The owner keeps the wallet. MCP can custody the delegate key, or the owner can bring one."
       },
       "rails": {
-        "values": ["x402", "MPP", "onchain transfer"],
+        "values": [
+          "x402",
+          "MPP",
+          "onchain transfer"
+        ],
         "source_url": "https://www.sui.io/agentpayments",
         "source_title": "Sui Agent Payments",
         "checked": "2026-10-19",
         "note": "The page says the gateway implements MPP and x402 and settles USDC on Sui."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "No",
+        "note": "The page says the owner sets the grant onchain, including the budget and per payment cap. It does not name the tool that changes the grant.",
+        "source_url": "https://www.sui.io/agentpayments",
+        "source_title": "Sui Agent Payments",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -844,11 +1069,21 @@
         "note": "A connected Tempo account approves a scoped access key for later payments."
       },
       "rails": {
-        "values": ["MPP"],
+        "values": [
+          "MPP"
+        ],
         "source_url": "https://tempo.xyz/developers/docs/guide/machine-payments/agent",
         "source_title": "Tempo guide to paying with the CLI",
         "checked": "2026-10-19",
         "note": "The pay with the CLI guide documents MPP payments for agents."
+      },
+      "cap_change": {
+        "value": "Wallet or owner signature",
+        "agent_reachable": "No",
+        "note": "The user approves the key limits up front: token, amount, call targets, recipients, and expiry.",
+        "source_url": "https://accounts.tempo.xyz/docs/guides/spend-permissions",
+        "source_title": "Tempo spend permissions",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -897,11 +1132,21 @@
         "note": "The agent receives a network token and a one time cryptogram. Enrollment says not to store the raw PAN."
       },
       "rails": {
-        "values": ["cards"],
+        "values": [
+          "cards"
+        ],
         "source_url": "https://developer.visa.com/docs/visa-intelligent-commerce",
         "source_title": "Visa Intelligent Commerce getting started",
         "checked": "2026-11-02",
         "note": "Eligible cards are tokenizable credit, debit, and prepaid cards."
+      },
+      "cap_change": {
+        "value": "Passkey or device approval",
+        "agent_reachable": "No",
+        "note": "The consumer authenticates the instruction, including with a Visa Payment Passkey.",
+        "source_url": "https://developer.visa.com/docs/visa-intelligent-commerce/workflows",
+        "source_title": "Visa Intelligent Commerce workflows",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -950,11 +1195,21 @@
         "note": "The Visa getting started page describes agent signatures and does not state this control."
       },
       "rails": {
-        "values": ["UNKNOWN"],
+        "values": [
+          "UNKNOWN"
+        ],
         "source_url": null,
         "source_title": null,
         "checked": "2026-10-20",
         "note": "The Visa getting started page describes agent signatures and does not state this control."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "Not documented as of 2026-11-02",
+        "note": "The Visa getting started page describes agent signatures and does not state a channel that raises a spending cap.",
+        "source_url": "https://developer.visa.com/docs/trusted-agent-protocol",
+        "source_title": "Visa Trusted Agent Protocol getting started",
+        "checked": "2026-11-02"
       }
     },
     {
@@ -1003,11 +1258,21 @@
         "note": "The client holds the keys. Exit moves funds on chain without anyone's permission."
       },
       "rails": {
-        "values": ["Lightning"],
+        "values": [
+          "Lightning"
+        ],
         "source_url": "https://lightning.engineering/posts/2026-10-23-wavelength-mainnet-launch/",
         "source_title": "Lightning Labs: Wavelength on mainnet, 23 October 2026",
         "checked": "2026-10-30",
         "note": "The 23 October 2026 post says bitcoin over Lightning. Stablecoins are coming soon, not live."
+      },
+      "cap_change": {
+        "value": "Not documented as of 2026-11-02",
+        "agent_reachable": "Not documented as of 2026-11-02",
+        "note": "The 23 October 2026 post states a mainnet account cap of 300,000 sats. It does not state a channel that raises that cap.",
+        "source_url": "https://lightning.engineering/posts/2026-10-23-wavelength-mainnet-launch/",
+        "source_title": "Lightning Labs: Wavelength on mainnet, 23 October 2026",
+        "checked": "2026-11-02"
       }
     }
   ]
