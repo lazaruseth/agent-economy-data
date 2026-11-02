@@ -23,5 +23,6 @@
   { "a": "pydantic-ai", "b": "smolagents", "added": "2026-10-17" },
   { "a": "shop-mcp", "b": "stripe-link-cli", "added": "2026-10-29" },
   { "a": "skyfire", "b": "tempo-wallet", "added": "2026-10-17" },
-  { "a": "visa-trusted-agent-protocol", "b": "web-bot-auth", "added": "2026-10-19" }
+  { "a": "visa-trusted-agent-protocol", "b": "web-bot-auth", "added": "2026-10-19" },
+  { "a": "agentcard-opencommerce", "b": "crossmint-agent-checkout", "added": "2026-11-02", "description": "Agentcard opencommerce vs Crossmint Agent Checkout, two live payment rails, compared on checkout, approval, spend limits, and fees, sources checked 2026-11-02." }
 ]

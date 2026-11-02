@@ -1,7 +1,7 @@
 {
   "title": "Agent spend controls compared",
   "added": "2026-10-19",
-  "updated": "2026-10-30",
+  "updated": "2026-11-02",
   "rows": [
     {
       "product": "Agent Vault",
@@ -54,6 +54,59 @@
         "source_title": "What is Agent Vault",
         "checked": "2026-10-20",
         "note": "The proxy types the real card into the merchant page after the rules pass."
+      }
+    },
+    {
+      "product": "Agentcard opencommerce",
+      "listing_slug": "agentcard-opencommerce",
+      "per_payment_cap": {
+        "value": "Partial",
+        "source_url": "https://docs.agentcard.com/commerce-sdk/guides/approving-a-purchase",
+        "source_title": "Approving a purchase",
+        "checked": "2026-11-02",
+        "note": "max_charge is the most the card can be held for on an approval. App auto-approval states no spending limit."
+      },
+      "period_budget": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-11-02",
+        "note": "App auto-approval states no end date. These pages do not state a daily, weekly, or monthly budget."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-11-02",
+        "note": "These pages do not state a merchant allowlist for app auto-approval."
+      },
+      "approval_threshold": {
+        "value": "Yes",
+        "source_url": "https://docs.agentcard.com/commerce-sdk/guides/approving-a-purchase",
+        "source_title": "Approving a purchase",
+        "checked": "2026-11-02",
+        "note": "The shopper approves each payment with a passkey. Auto-approval can skip the link when the processor fixes the amount."
+      },
+      "revoke": {
+        "value": "Yes",
+        "source_url": "https://docs.agentcard.com/vault/app-auto-approval",
+        "source_title": "Enable auto-approval",
+        "checked": "2026-11-02",
+        "note": "The user turns app auto-approval off in the Vault. The permission status becomes revoked."
+      },
+      "custody": {
+        "value": "Shopper card in Agentcard Vault",
+        "source_url": "https://docs.agentcard.com/commerce-sdk/guides/approving-a-purchase",
+        "source_title": "Approving a purchase",
+        "checked": "2026-11-02",
+        "note": "The shopper saves a card in the Agentcard Vault, and Agentcard places the order with that card."
+      },
+      "rails": {
+        "values": ["cards"],
+        "source_url": "https://docs.agentcard.com/commerce-sdk/guides/approving-a-purchase",
+        "source_title": "Approving a purchase",
+        "checked": "2026-11-02",
+        "note": "Agentcard places the order with the shopper's saved card."
       }
     },
     {
@@ -796,6 +849,59 @@
         "source_title": "Tempo guide to paying with the CLI",
         "checked": "2026-10-19",
         "note": "The pay with the CLI guide documents MPP payments for agents."
+      }
+    },
+    {
+      "product": "Visa Intelligent Commerce",
+      "listing_slug": "visa-intelligent-commerce",
+      "per_payment_cap": {
+        "value": "Yes",
+        "source_url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+        "source_title": "Visa Intelligent Commerce getting started",
+        "checked": "2026-11-02",
+        "note": "A mandate includes declineThreshold as a consumer defined spend parameter."
+      },
+      "period_budget": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-11-02",
+        "note": "effectiveUntilTime is a mandate end time. These pages do not state a daily, weekly, or monthly budget."
+      },
+      "allowlist": {
+        "value": "UNKNOWN",
+        "source_url": null,
+        "source_title": null,
+        "checked": "2026-11-02",
+        "note": "These pages do not state a merchant allowlist. A purchase instruction can name a merchant."
+      },
+      "approval_threshold": {
+        "value": "Yes",
+        "source_url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+        "source_title": "Visa Intelligent Commerce getting started",
+        "checked": "2026-11-02",
+        "note": "The consumer authenticates the instruction, for example with a Visa Payment Passkey, before a credential is returned."
+      },
+      "revoke": {
+        "value": "Partial",
+        "source_url": "https://developer.visa.com/docs/visa-intelligent-commerce/workflows",
+        "source_title": "Visa Intelligent Commerce workflows",
+        "checked": "2026-11-02",
+        "note": "PUT cancel sets an active instruction to CANCELLED. Credentials already issued stay valid at the merchant."
+      },
+      "custody": {
+        "value": "Tokenized Visa credential",
+        "source_url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+        "source_title": "Visa Intelligent Commerce getting started",
+        "checked": "2026-11-02",
+        "note": "The agent receives a network token and a one time cryptogram. Enrollment says not to store the raw PAN."
+      },
+      "rails": {
+        "values": ["cards"],
+        "source_url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+        "source_title": "Visa Intelligent Commerce getting started",
+        "checked": "2026-11-02",
+        "note": "Eligible cards are tokenizable credit, debit, and prepaid cards."
       }
     },
     {
