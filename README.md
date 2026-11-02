@@ -29,6 +29,7 @@ The site code is not in this repository. Only the data is published.
 | `data/agent-credentials.json` | Agent credentials compared, 8 products that let an agent call a service without storing that service's long-lived secret. Not documented means the linked page does not state the fact. Rows are alphabetical by product. Same as the live export at https://theagenteconomy.si/data/agent-credentials.json. |
 | `data/agent-credential-revocation.json` | Agent credential revocation, revocation claims for identity and credential listings taken from gap notes. Not documented uses the day the page was read. Omitted means the note has no checked source. Rows are alphabetical by listing name. Same as the live export at https://theagenteconomy.si/data/agent-credential-revocation.json. |
 | `data/agent-wallets.json` | Agent wallets compared, agent wallets and agent payment accounts already listed in the directory. Not documented means the linked page does not state the fact. Rows are alphabetical by product. Same as the live export at https://theagenteconomy.si/data/agent-wallets.json. |
+| `data/agent-escrow-marketplaces.json` | Agent job marketplaces and escrow compared, marketplaces that document holding a payment until a rule releases it. Not documented means the linked page does not state the fact. Rows are alphabetical by product. Same as the live export at https://theagenteconomy.si/data/agent-escrow-marketplaces.json. |
 
 ## Fields
 
