@@ -24,5 +24,6 @@
   { "a": "shop-mcp", "b": "stripe-link-cli", "added": "2026-10-29" },
   { "a": "skyfire", "b": "tempo-wallet", "added": "2026-10-17" },
   { "a": "visa-trusted-agent-protocol", "b": "web-bot-auth", "added": "2026-10-19" },
-  { "a": "agentcard-opencommerce", "b": "crossmint-agent-checkout", "added": "2026-11-02", "description": "Agentcard opencommerce vs Crossmint Agent Checkout, two live payment rails, compared on checkout, approval, spend limits, and fees, sources checked 2026-11-02." }
+  { "a": "agentcard-opencommerce", "b": "crossmint-agent-checkout", "added": "2026-11-02", "description": "Agentcard opencommerce vs Crossmint Agent Checkout, two live payment rails, compared on checkout, approval, spend limits, and fees, sources checked 2026-11-02." },
+  { "a": "fireblocks-agentic-payments", "b": "payai-x402-facilitator", "added": "2026-11-03", "description": "Fireblocks Agentic Payments Suite vs PayAI x402 facilitator, compared on hosting, settlement, spend controls, and license, sources checked 2026-11-03." }
 ]

@@ -235,7 +235,7 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments"],
     "related": ["l402", "machine-payments-protocol", "x402"],
     "last_verified": "2026-10-30"
   },
@@ -640,7 +640,7 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform"],
     "related": ["json-rpc", "personal-agent-protocol", "tool-call", "ucp"],
     "last_verified": "2026-11-02"
   },
@@ -676,9 +676,15 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "payai-x402-facilitator"],
+    "listings": ["x402", "nevermined", "payai-x402-facilitator", "fireblocks-agentic-payments"],
     "related": ["x402"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-03",
+    "updates": [
+      {
+        "date": "2026-11-03",
+        "detail": "Added Fireblocks Agentic Payments Suite to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "personal-agent-protocol",
@@ -712,7 +718,7 @@
       "title": "LiteLLM proxy budgets",
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
-    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce"],
+    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments"],
     "related": ["agent-wallet", "spend-request", "approval-channel"],
     "last_verified": "2026-11-02"
   },
@@ -778,7 +784,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments"],
     "related": ["http-402", "payment-facilitator"],
     "last_verified": "2026-10-17"
   },
