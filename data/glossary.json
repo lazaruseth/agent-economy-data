@@ -43,9 +43,15 @@
       "title": "Overview of agent identities in Microsoft Entra",
       "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-identities"
     },
-    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol", "x401", "servicenow-ai-passport", "ibm-agent-identity"],
+    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol", "x401", "servicenow-ai-passport", "ibm-agent-identity", "descope-envoy"],
     "related": ["agntcy", "did", "erc-8004", "know-your-agent", "kyapay", "web-bot-auth"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-04",
+    "updates": [
+      {
+        "date": "2026-11-04",
+        "detail": "Added Descope Envoy to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "agent-mandate",
@@ -646,9 +652,15 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct"],
     "related": ["json-rpc", "personal-agent-protocol", "tool-call", "ucp"],
-    "last_verified": "2026-11-02"
+    "last_verified": "2026-11-04",
+    "updates": [
+      {
+        "date": "2026-11-04",
+        "detail": "Added Natural Direct to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "multi-agent",
@@ -699,14 +711,26 @@
   {
     "slug": "personal-agent-protocol",
     "term": "Personal Agent Protocol",
-    "definition": "Draft protocol for a company to publish how a personal agent may sign in and act on a person's account, using OAuth, OpenAPI, and MCP.",
+    "definition": "Draft protocol. Version 0.2 was published 24 October 2026, and the spec page says draft 0.3 is in progress. A company publishes how a personal agent may sign in and act on a person's account, using OAuth, OpenAPI, and MCP. Descope Envoy is a documented implementation as of 4 November 2026.",
     "source": {
-      "title": "Personal Agent Protocol overview",
-      "url": "https://personalagentprotocol.org/docs/introduction"
+      "title": "Personal Agent Protocol specification, version 0.2",
+      "url": "https://personalagentprotocol.org/docs/0.2/spec"
     },
-    "listings": ["personal-agent-protocol"],
+    "more_sources": [
+      {
+        "title": "Descope Unveils Envoy, an Identity-Aware Way For Personal AI Agents to Act on People's Behalf",
+        "url": "https://www.globenewswire.com/news-release/2026/11/04/3395352/0/en/descope-unveils-envoy-an-identity-aware-way-for-personal-ai-agents-to-act-on-people-s-behalf.html"
+      }
+    ],
+    "listings": ["personal-agent-protocol", "descope-envoy"],
     "related": ["mcp", "pact"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-04",
+    "updates": [
+      {
+        "date": "2026-11-04",
+        "detail": "Recorded spec version 0.2 published 24 October 2026, with draft 0.3 in progress, and Descope Envoy as a documented implementation."
+      }
+    ]
   },
   {
     "slug": "policy-engine",
@@ -728,9 +752,15 @@
       "title": "LiteLLM proxy budgets",
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
-    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments"],
+    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card"],
     "related": ["agent-wallet", "spend-request", "approval-channel"],
-    "last_verified": "2026-11-02"
+    "last_verified": "2026-11-04",
+    "updates": [
+      {
+        "date": "2026-11-04",
+        "detail": "Added Sunrate Agentic Card to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "spend-request",
