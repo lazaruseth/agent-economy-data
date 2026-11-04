@@ -235,7 +235,7 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator"],
     "related": ["l402", "machine-payments-protocol", "x402"],
     "last_verified": "2026-10-30"
   },
@@ -294,7 +294,13 @@
       "socure-agent-intelligence"
     ],
     "related": ["agent-identity", "erc-8004", "kyapay", "web-bot-auth"],
-    "last_verified": "2026-10-21",
+    "last_verified": "2026-11-04",
+    "updates": [
+      {
+        "date": "2026-11-04",
+        "detail": "Replaced the BILL and Billtrust pilot URL, which returned 404, with the Visa press release dated 2026-10-20."
+      }
+    ],
     "article": {
       "meta_description": "Know Your Agent verifies which agent is acting, on whose behalf, and with what authority before a merchant or service lets it transact.",
       "categories": ["identity"],
@@ -544,7 +550,7 @@
           "text": "On 2026-10-20, Visa said a live pilot with BILL and Billtrust registers the BILL Payment Agent using Trusted Agent Protocol and the Agentic Directory. Billtrust uses the protocol to authenticate that agent at supplier portals.",
           "source": {
             "title": "Visa press release on the BILL and Billtrust pilot, 2026-10-20",
-            "url": "https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-bill-billtrust-launch-pilot.html"
+            "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22856.html"
           }
         },
         {
@@ -676,13 +682,17 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "payai-x402-facilitator", "fireblocks-agentic-payments"],
+    "listings": ["x402", "nevermined", "payai-x402-facilitator", "fireblocks-agentic-payments", "coinbase-x402-facilitator"],
     "related": ["x402"],
-    "last_verified": "2026-11-03",
+    "last_verified": "2026-11-04",
     "updates": [
       {
         "date": "2026-11-03",
         "detail": "Added Fireblocks Agentic Payments Suite to the listings for this term."
+      },
+      {
+        "date": "2026-11-04",
+        "detail": "Added Coinbase x402 Facilitator to the listings for this term."
       }
     ]
   },
@@ -784,7 +794,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator"],
     "related": ["http-402", "payment-facilitator"],
     "last_verified": "2026-10-17"
   },

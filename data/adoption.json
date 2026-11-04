@@ -379,5 +379,20 @@
     "measured": "UNKNOWN",
     "notes": [],
     "checked": "2026-11-03"
+  },
+  {
+    "slug": "cloudflare-monetization-gateway",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "coinbase-x402-facilitator",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-04"
   }
 ]
+
