@@ -14,6 +14,7 @@
   {
     "slug": "approval-channel",
     "term": "Approval channel",
+    "question": "What is an approval channel?",
     "definition": "An approval channel is the path that carries human approval for an agent action. The I-HITL paper says that path must end at a trusted entity the agent cannot reach.",
     "source": {
       "title": "I-HITL: Inalienable Human-in-the-Loop",
@@ -21,11 +22,18 @@
     },
     "listings": ["agent-vault", "agentcard-opencommerce", "circle-agent-wallets", "coinbase-agentic-wallet", "ledger-agent-intent", "metamask-agent-wallet", "mpp", "nevermined", "stripe-link-cli", "tempo-wallet", "visa-intelligent-commerce"],
     "related": ["human-approval", "spend-limit"],
-    "last_verified": "2026-11-02"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is an approval channel?"
+      }
+    ]
   },
   {
     "slug": "agent-card",
     "term": "Agent Card",
+    "question": "What is an Agent Card?",
     "definition": "JSON document in A2A that lists an agent's identity, capabilities, endpoint, skills, and authentication requirements so a client can decide how to call it.",
     "source": {
       "title": "A2A core concepts",
@@ -33,29 +41,62 @@
     },
     "listings": ["a2a", "concordium-agent-registry"],
     "related": ["a2a"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is an Agent Card?"
+      }
+    ]
+  },
+  {
+    "slug": "agent-id",
+    "term": "Agent ID",
+    "question": "What is an Agent ID?",
+    "definition": "A human readable on-chain name for an agent wallet. On BNB Smart Chain, SPACE ID Agent ID mints each handle as a soulbound ERC-721 and resolves it to a Binance Agent Wallet address through a public API or the registry contract.",
+    "source": {
+      "title": "SPACE ID Agent ID docs",
+      "url": "https://docs.space.id/agent-id"
+    },
+    "listings": ["space-id-agent-id", "binance-agentic-wallet", "concordium-agent-registry"],
+    "related": ["agent-identity", "erc-8004", "know-your-agent"],
+    "last_verified": "2026-11-06"
   },
   {
     "slug": "agent-identity",
     "term": "Agent identity",
+    "question": "What is agent identity?",
     "definition": "An identity created for an agent so access policy, risk checks, and audit logs can apply to it. Microsoft Entra Agent ID creates these identities from blueprints.",
     "source": {
       "title": "Overview of agent identities in Microsoft Entra",
       "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-identities"
     },
-    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol", "x401", "servicenow-ai-passport", "ibm-agent-identity", "descope-envoy"],
-    "related": ["agntcy", "did", "erc-8004", "know-your-agent", "kyapay", "web-bot-auth"],
-    "last_verified": "2026-11-04",
+    "listings": ["entra-agent-id", "erc-8004", "anp", "skyfire", "agntcy", "visa-trusted-agent-protocol", "x401", "servicenow-ai-passport", "ibm-agent-identity", "descope-envoy", "agentic-identity-broker"],
+    "related": ["agent-id", "agntcy", "did", "erc-8004", "know-your-agent", "kyapay", "token-exchange", "web-bot-auth"],
+    "last_verified": "2026-11-13",
     "updates": [
       {
         "date": "2026-11-04",
         "detail": "Added Descope Envoy to the listings for this term."
+      },
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is agent identity?"
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Agentic Identity Broker to the listings for this term."
+      },
+      {
+        "date": "2026-11-13",
+        "detail": "Added OAuth token exchange to the related terms."
       }
     ]
   },
   {
     "slug": "agent-mandate",
     "term": "Agent mandate",
+    "question": "What is an agent mandate?",
     "definition": "Signed credential in AP2. A checkout mandate records the cart negotiated with the merchant. A payment mandate authorizes a payment instrument against that checkout.",
     "source": {
       "title": "AP2 protocol documentation",
@@ -63,11 +104,18 @@
     },
     "listings": ["ap2"],
     "related": ["ap2"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is an agent mandate?"
+      }
+    ]
   },
   {
     "slug": "agent-marketplace",
     "term": "Agent marketplace",
+    "question": "What is an agent marketplace?",
     "definition": "A market where an agent can hire a specialized agent for a task and pay for the work, or list its own service for other agents to hire.",
     "source": {
       "title": "Olas Mech Marketplace",
@@ -75,31 +123,59 @@
     },
     "listings": ["kleros-escrow", "olas-mech-marketplace", "pactwright", "termix", "vangrid", "virtuals-protocol"],
     "related": ["compute-marketplace"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is an agent marketplace?"
+      }
+    ]
   },
   {
     "slug": "agent-wallet",
     "term": "Agent wallet",
+    "question": "What is an agent wallet?",
     "definition": "A wallet an agent can use to discover paid services and pay under a cap the operator set. Tempo Wallet lets an agent preview Machine Payments Protocol terms and pay under a max spend cap.",
     "source": {
       "title": "Tempo Wallet agent documentation",
       "url": "https://tempo.xyz/developers/docs/wallet/recipes"
     },
-    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets"],
+    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets", "binance-agentic-wallet", "coinbase-wallet-mcp"],
     "related": ["kyapay", "machine-payments-protocol", "spend-limit", "agent-checkout"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-11",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Added Binance Agentic Wallet to the listings for this term. Page title question set to What is an agent wallet?"
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Coinbase Wallet MCP to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "agent-checkout",
     "term": "Agent checkout",
+    "question": "What is agent checkout?",
     "definition": "A checkout an agent runs at a merchant for a user, with a cap set before payment. Crossmint Agent Checkouts sends a start URL, a task, and that cap, and the agent does not hold the card number.",
     "source": {
       "title": "Crossmint Agent Checkouts",
       "url": "https://docs.crossmint.com/agents/checkouts"
     },
-    "listings": ["agentcard-opencommerce", "crossmint-agent-checkout", "shop-mcp"],
+    "listings": ["agentcard-opencommerce", "crossmint-agent-checkout", "shop-mcp", "kernel-agent-payments"],
     "related": ["agent-wallet", "ucp", "spend-request"],
-    "last_verified": "2026-11-02"
+    "last_verified": "2026-11-11",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is agent checkout?"
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added KERNEL agent payments to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "agentic-commerce-protocol",
@@ -140,6 +216,7 @@
   {
     "slug": "compute-marketplace",
     "term": "Compute marketplace",
+    "question": "What is a compute marketplace?",
     "definition": "A market where independent providers offer compute for workloads. Akash Network documents providers bidding to host those workloads.",
     "source": {
       "title": "Akash Network introduction",
@@ -147,11 +224,18 @@
     },
     "listings": ["akash-network", "render-network", "gensyn", "ornn"],
     "related": ["agent-marketplace", "compute-futures", "digital-commodity"],
-    "last_verified": "2026-10-21"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a compute marketplace?"
+      }
+    ]
   },
   {
     "slug": "compute-futures",
     "term": "Compute futures",
+    "question": "What are compute futures?",
     "definition": "A futures contract quoted in dollars per GPU hour. AX lists dated H100, H200, B200, and B300 contracts on its public instrument list. ICE has published monthly cash settled specifications on the Ornn Compute Price Index and says no listing date is set.",
     "source": {
       "title": "AX instruments feed",
@@ -165,11 +249,18 @@
     ],
     "listings": ["architect", "ornn"],
     "related": ["compute-marketplace"],
-    "last_verified": "2026-10-21"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What are compute futures?"
+      }
+    ]
   },
   {
     "slug": "content-addressed-proof",
     "term": "Content-addressed proof",
+    "question": "What is a content-addressed proof?",
     "definition": "A record identified by a hash of its bytes, so a reader can check that those bytes match the identifier. Merkle proofs show membership in a larger hashed set. IPFS content identifiers are a common form. Accords is one listing that uses this for a transaction record, not the only use.",
     "source": {
       "title": "IPFS content identifiers",
@@ -183,11 +274,18 @@
     ],
     "listings": ["accords"],
     "related": [],
-    "last_verified": "2026-10-19"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a content-addressed proof?"
+      }
+    ]
   },
   {
     "slug": "did",
     "term": "Decentralized identifier",
+    "question": "What is a decentralized identifier (DID)?",
     "definition": "A URI that associates a subject with a DID document. The controller can prove control without permission from a centralized registry, identity provider, or certificate authority.",
     "source": {
       "title": "W3C Decentralized Identifiers v1.0",
@@ -195,11 +293,18 @@
     },
     "listings": ["anp"],
     "related": ["agent-identity", "erc-8004"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a decentralized identifier (DID)?"
+      }
+    ]
   },
   {
     "slug": "digital-commodity",
     "term": "Digital commodity",
+    "question": "What is a digital commodity?",
     "definition": "Work product of an open network where independent subnets produce digital commodities and the chain pays contributors.",
     "source": {
       "title": "Bittensor site",
@@ -207,7 +312,13 @@
     },
     "listings": ["bittensor"],
     "related": ["compute-marketplace"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a digital commodity?"
+      }
+    ]
   },
   {
     "slug": "erc-8004",
@@ -218,20 +329,27 @@
       "url": "https://eips.ethereum.org/EIPS/eip-8004"
     },
     "listings": ["erc-8004", "concordium-agent-registry"],
-    "related": ["agent-identity", "did", "know-your-agent"],
+    "related": ["agent-id", "agent-identity", "did", "know-your-agent"],
     "last_verified": "2026-10-17"
   },
   {
     "slug": "guardrail",
     "term": "Guardrail",
+    "question": "What is a guardrail?",
     "definition": "Programmable check that can block, alter, or validate user input, model output, or a tool call. NeMo Guardrails runs these checks as rails around an LLM application.",
     "source": {
       "title": "NVIDIA NeMo Guardrails overview",
       "url": "https://docs.nvidia.com/nemo/guardrails/about-nemo-guardrails-library/overview"
     },
-    "listings": ["guardrails-ai", "invariant", "lakera-guard", "nemo-guardrails", "strands-agents", "openai-agents-sdk", "mastra", "pydantic-ai", "litellm"],
+    "listings": ["guardrails-ai", "invariant", "lakera-guard", "nemo-guardrails", "strands-agents", "openai-agents-sdk", "mastra", "pydantic-ai", "litellm", "prax-wallet-screening"],
     "related": ["human-approval", "policy-engine", "tool-call"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a guardrail?"
+      }
+    ]
   },
   {
     "slug": "http-402",
@@ -241,21 +359,46 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "circle-managed-agentic-payments", "402sentinel", "attest", "counterpartycheck", "factline-x402-pay-guard", "lumiere-paycheck", "preflight402", "coinbase-wallet-mcp"],
     "related": ["l402", "machine-payments-protocol", "x402"],
-    "last_verified": "2026-10-30"
+    "last_verified": "2026-11-11",
+    "updates": [
+      {
+        "date": "2026-11-09",
+        "detail": "Added Circle Managed Agentic Payments to the listings for this term."
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Coinbase Wallet MCP to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "human-approval",
     "term": "Human approval",
+    "question": "What is human approval?",
     "definition": "A pause where a person inspects or changes agent state before the run continues. LangGraph provides this inside the graph.",
     "source": {
       "title": "LangGraph overview",
       "url": "https://docs.langchain.com/oss/python/langgraph/overview"
     },
-    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp", "agentcard-opencommerce"],
+    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp", "agentcard-opencommerce", "rain-agent-vaults", "coinbase-wallet-mcp", "kernel-agent-payments"],
     "related": ["guardrail", "multi-agent", "tool-call", "spend-request", "approval-channel"],
-    "last_verified": "2026-11-02"
+    "last_verified": "2026-11-11",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is human approval?"
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Rain Agent Vaults to the listings for this term."
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Coinbase Wallet MCP and KERNEL agent payments to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "json-rpc",
@@ -297,14 +440,23 @@
       "visa-trusted-agent-protocol",
       "web-bot-auth",
       "x401",
-      "socure-agent-intelligence"
+      "socure-agent-intelligence",
+      "sardine-know-your-human"
     ],
-    "related": ["agent-identity", "erc-8004", "kyapay", "web-bot-auth"],
-    "last_verified": "2026-11-04",
+    "related": ["agent-id", "agent-identity", "erc-8004", "kyapay", "web-bot-auth"],
+    "last_verified": "2026-11-11",
     "updates": [
       {
         "date": "2026-11-04",
         "detail": "Replaced the BILL and Billtrust pilot URL, which returned 404, with the Visa press release dated 2026-10-20."
+      },
+      {
+        "date": "2026-11-04",
+        "detail": "Added the Socure Agent Intelligence launch dated 27 October 2026 to recent developments, and aligned the last verified question with that date."
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Sardine Know Your Human to the listings for this term."
       }
     ],
     "article": {
@@ -552,6 +704,14 @@
       ],
       "developments": [
         {
+          "date": "2026-10-27",
+          "text": "Launched 27 October 2026. Agent Detection is generally available inside Socure Digital Intelligence and returns a confidence score and reason codes. Agent TrustScore is in beta and returns identity, authorization, and risk separately. Agent Credential, a W3C Verifiable Credential, launches in Q1 2027. It runs within Socure RiskOS.",
+          "source": {
+            "title": "Socure newsroom: Agent Intelligence launch, 27 October 2026",
+            "url": "https://www.socure.com/news-and-press/agent-intelligence-launch"
+          }
+        },
+        {
           "date": "2026-10-20",
           "text": "On 2026-10-20, Visa said a live pilot with BILL and Billtrust registers the BILL Payment Agent using Trusted Agent Protocol and the Agentic Directory. Billtrust uses the protocol to authenticate that agent at supplier portals.",
           "source": {
@@ -603,7 +763,7 @@
         },
         {
           "question": "When was this page last verified?",
-          "answer": "Last verified 2026-10-21."
+          "answer": "Last verified 2026-11-04."
         }
       ]
     }
@@ -640,9 +800,15 @@
       "title": "Stripe documentation for MPP",
       "url": "https://docs.stripe.com/payments/machine/mpp"
     },
-    "listings": ["mpp", "tempo-wallet", "nevermined"],
+    "listings": ["mpp", "tempo-wallet", "nevermined", "circle-managed-agentic-payments"],
     "related": ["agent-wallet", "ap2", "http-402"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-09",
+    "updates": [
+      {
+        "date": "2026-11-09",
+        "detail": "Added Circle Managed Agentic Payments to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "mcp",
@@ -652,19 +818,64 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct"],
-    "related": ["json-rpc", "personal-agent-protocol", "tool-call", "ucp"],
-    "last_verified": "2026-11-04",
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct", "cashfree-checkout-for-agents", "kraken", "okx-agent-trade-kit", "pacifica", "tradier", "coinbase-wallet-mcp", "binance", "bitget-agent-hub", "kalshi", "idenfy-mcp"],
+    "related": ["json-rpc", "personal-agent-protocol", "token-exchange", "tool-call", "ucp"],
+    "last_verified": "2026-11-13",
     "updates": [
       {
         "date": "2026-11-04",
         "detail": "Added Natural Direct to the listings for this term."
+      },
+      {
+        "date": "2026-11-09",
+        "detail": "Added Cashfree Checkout for Agents, which registers WebMCP tools, to the listings for this term."
+      },
+      {
+        "date": "2026-11-10",
+        "detail": "Added Kraken, OKX Agent Trade Kit, and Pacifica to the listings for this term."
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Tradier and Coinbase Wallet MCP to the listings for this term."
+      },
+      {
+        "date": "2026-11-12",
+        "detail": "Added Binance, Bitget Agent Hub, and Kalshi to the listings for this term."
+      },
+      {
+        "date": "2026-11-13",
+        "detail": "Added the iDenfy account MCP server to the listings for this term."
+      }
+    ]
+  },
+  {
+    "slug": "token-exchange",
+    "term": "OAuth token exchange",
+    "definition": "An HTTP and JSON based protocol for requesting and obtaining security tokens from OAuth 2.0 authorization servers, including tokens that use impersonation and delegation. The Zalando Engineering post names this RFC as an OAuth 2.0 standard already available, and says a gateway exchanges an agent token for a provider token that never reaches the agent.",
+    "source": {
+      "title": "RFC 8693: OAuth 2.0 Token Exchange",
+      "url": "https://www.rfc-editor.org/rfc/rfc8693.html"
+    },
+    "more_sources": [
+      {
+        "title": "Agentic Platform: Open-Sourcing the Agentic Identity Broker, 2026-09-25",
+        "url": "https://engineering.zalando.com/posts/2026/09/agentic-platform-open-sourcing-agentic-identity-broker.html"
+      }
+    ],
+    "listings": ["agentic-identity-broker", "ibm-agent-identity"],
+    "related": ["agent-identity", "mcp"],
+    "last_verified": "2026-11-13",
+    "updates": [
+      {
+        "date": "2026-11-13",
+        "detail": "Term added from RFC 8693. The Zalando Engineering post is a second source for agent use."
       }
     ]
   },
   {
     "slug": "multi-agent",
     "term": "Multi agent",
+    "question": "What does multi agent mean?",
     "definition": "More than one agent collaborating under a runtime. CrewAI pairs event driven Flows for control flow with Crews of role based agents that share a delegated task.",
     "source": {
       "title": "CrewAI introduction",
@@ -672,7 +883,13 @@
     },
     "listings": ["crewai", "google-adk", "microsoft-agent-framework"],
     "related": ["human-approval", "tool-call"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What does multi agent mean?"
+      }
+    ]
   },
   {
     "slug": "pact",
@@ -689,6 +906,7 @@
   {
     "slug": "payment-facilitator",
     "term": "Payment facilitator",
+    "question": "What is a payment facilitator?",
     "definition": "A service that verifies a payment and settles it for the seller. In x402 the server asks the facilitator to verify, does the work, then asks the facilitator to settle.",
     "source": {
       "title": "Coinbase documentation for how x402 works",
@@ -696,7 +914,7 @@
     },
     "listings": ["x402", "nevermined", "payai-x402-facilitator", "fireblocks-agentic-payments", "coinbase-x402-facilitator"],
     "related": ["x402"],
-    "last_verified": "2026-11-04",
+    "last_verified": "2026-11-05",
     "updates": [
       {
         "date": "2026-11-03",
@@ -705,6 +923,10 @@
       {
         "date": "2026-11-04",
         "detail": "Added Coinbase x402 Facilitator to the listings for this term."
+      },
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a payment facilitator?"
       }
     ]
   },
@@ -735,6 +957,7 @@
   {
     "slug": "policy-engine",
     "term": "Policy engine",
+    "question": "What is a policy engine?",
     "definition": "Software that returns a decision from policy code, separate from the application that enforces it. Open Policy Agent evaluates structured input against Rego policy.",
     "source": {
       "title": "Open Policy Agent documentation",
@@ -742,29 +965,49 @@
     },
     "listings": ["open-policy-agent", "invariant"],
     "related": ["guardrail"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a policy engine?"
+      }
+    ]
   },
   {
     "slug": "spend-limit",
     "term": "Spend limit",
+    "question": "What is a spend limit?",
     "definition": "A budget on model calls. LiteLLM Proxy enforces personal, team, and agent spend budgets when a database is connected.",
     "source": {
       "title": "LiteLLM proxy budgets",
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
-    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card"],
+    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card", "binance-agentic-wallet", "rain-agent-vaults", "coinbase-wallet-mcp"],
     "related": ["agent-wallet", "spend-request", "approval-channel"],
-    "last_verified": "2026-11-04",
+    "last_verified": "2026-11-11",
     "updates": [
       {
         "date": "2026-11-04",
         "detail": "Added Sunrate Agentic Card to the listings for this term."
+      },
+      {
+        "date": "2026-11-05",
+        "detail": "Added Binance Agentic Wallet to the listings for this term. Page title question set to What is a spend limit?"
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Rain Agent Vaults to the listings for this term."
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Coinbase Wallet MCP to the listings for this term."
       }
     ]
   },
   {
     "slug": "spend-request",
     "term": "Spend request",
+    "question": "What is a spend request?",
     "definition": "A request an agent creates for one purchase. It names the payee, the items or totals, and the most the card can be charged. The buyer approves it, then the service issues a one time card or payment credential for that purchase.",
     "source": {
       "title": "Approve a purchase outside Shopify",
@@ -776,13 +1019,24 @@
         "url": "https://github.com/stripe/link-cli/blob/main/README.md"
       }
     ],
-    "listings": ["shop-mcp", "stripe-link-cli"],
+    "listings": ["shop-mcp", "stripe-link-cli", "kernel-agent-payments"],
     "related": ["human-approval", "spend-limit", "agent-checkout"],
-    "last_verified": "2026-10-29"
+    "last_verified": "2026-11-11",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a spend request?"
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added KERNEL agent payments to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "tool-call",
     "term": "Tool call",
+    "question": "What is a tool call?",
     "definition": "A function an MCP server exposes for a model to execute. The MCP specification treats a tool as code execution and says hosts must get explicit user consent before invoking one.",
     "source": {
       "title": "Model Context Protocol specification",
@@ -790,7 +1044,13 @@
     },
     "listings": ["mcp", "claude-agent-sdk", "google-adk", "openai-agents-sdk", "smolagents", "strands-agents", "lakera-guard", "nemo-guardrails", "webmcp"],
     "related": ["guardrail", "human-approval", "mcp", "multi-agent"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a tool call?"
+      }
+    ]
   },
   {
     "slug": "ucp",
@@ -812,9 +1072,15 @@
       "title": "Cloudflare Web Bot Auth documentation",
       "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
     },
-    "listings": ["web-bot-auth", "visa-trusted-agent-protocol", "beltic-kya"],
+    "listings": ["web-bot-auth", "visa-trusted-agent-protocol", "beltic-kya", "kernel-agent-payments"],
     "related": ["agent-identity", "know-your-agent"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-11",
+    "updates": [
+      {
+        "date": "2026-11-11",
+        "detail": "Added KERNEL agent payments to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "x402",
@@ -824,13 +1090,28 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp"],
     "related": ["http-402", "payment-facilitator"],
-    "last_verified": "2026-10-17"
+    "last_verified": "2026-11-11",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Added Binance Agentic Wallet to the listings for this term."
+      },
+      {
+        "date": "2026-11-09",
+        "detail": "Added Circle Managed Agentic Payments to the listings for this term."
+      },
+      {
+        "date": "2026-11-11",
+        "detail": "Added Coinbase Wallet MCP to the listings for this term."
+      }
+    ]
   },
   {
     "slug": "payment-receipt",
     "term": "Payment receipt",
+    "question": "What is a payment receipt?",
     "definition": "A receipt produced for every payment. Celestia's Voyager post says its single node benchmark produces one for every payment, and that real time status queries are not built yet.",
     "source": {
       "title": "Introducing Voyager: Hyperscale Payments for Agentic Commerce",
@@ -838,6 +1119,12 @@
     },
     "listings": ["celestia-voyager"],
     "related": [],
-    "last_verified": "2026-10-30"
+    "last_verified": "2026-11-05",
+    "updates": [
+      {
+        "date": "2026-11-05",
+        "detail": "Page title question set to What is a payment receipt?"
+      }
+    ]
   }
 ]
