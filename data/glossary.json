@@ -1011,9 +1011,9 @@
       "title": "LiteLLM proxy budgets",
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
-    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card", "binance-agentic-wallet", "rain-agent-vaults", "coinbase-wallet-mcp"],
+    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card", "binance-agentic-wallet", "rain-agent-vaults", "coinbase-wallet-mcp", "lead-agent-account-numbers", "navoka", "stripe-issuing-for-agents"],
     "related": ["agent-wallet", "spend-request", "approval-channel"],
-    "last_verified": "2026-11-11",
+    "last_verified": "2026-11-16",
     "updates": [
       {
         "date": "2026-11-04",
@@ -1030,6 +1030,10 @@
       {
         "date": "2026-11-11",
         "detail": "Added Coinbase Wallet MCP to the listings for this term."
+      },
+      {
+        "date": "2026-11-16",
+        "detail": "Added Lead Agent Account Numbers, Navoka, and Stripe Issuing for agents to the listings for this term."
       }
     ]
   },

@@ -456,6 +456,26 @@
     "measured": "UNKNOWN",
     "notes": [],
     "checked": "2026-11-16"
+  },
+  {
+    "slug": "lead-agent-account-numbers",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-16"
+  },
+  {
+    "slug": "navoka",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-16"
+  },
+  {
+    "slug": "stripe-issuing-for-agents",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-16"
   }
 ]
-
