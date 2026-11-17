@@ -144,9 +144,9 @@
       "title": "Tempo Wallet agent documentation",
       "url": "https://tempo.xyz/developers/docs/wallet/recipes"
     },
-    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets", "binance-agentic-wallet", "coinbase-wallet-mcp", "chatgpt-wallet"],
+    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets", "binance-agentic-wallet", "coinbase-wallet-mcp", "chatgpt-wallet", "coinstancy-agentic-bank"],
     "related": ["kyapay", "machine-payments-protocol", "spend-limit", "agent-checkout"],
-    "last_verified": "2026-11-16",
+    "last_verified": "2026-11-17",
     "updates": [
       {
         "date": "2026-11-05",
@@ -159,6 +159,10 @@
       {
         "date": "2026-11-16",
         "detail": "Added ChatGPT Wallet to the listings for this term."
+      },
+      {
+        "date": "2026-11-17",
+        "detail": "Added Coinstancy Agentic Bank to the listings for this term."
       }
     ]
   },
@@ -371,9 +375,9 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "circle-managed-agentic-payments", "402sentinel", "attest", "counterpartycheck", "factline-x402-pay-guard", "lumiere-paycheck", "preflight402", "coinbase-wallet-mcp"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "circle-managed-agentic-payments", "402sentinel", "attest", "counterpartycheck", "factline-x402-pay-guard", "lumiere-paycheck", "preflight402", "coinbase-wallet-mcp", "coinstancy-agentic-bank"],
     "related": ["l402", "machine-payments-protocol", "x402"],
-    "last_verified": "2026-11-11",
+    "last_verified": "2026-11-17",
     "updates": [
       {
         "date": "2026-11-09",
@@ -382,6 +386,10 @@
       {
         "date": "2026-11-11",
         "detail": "Added Coinbase Wallet MCP to the listings for this term."
+      },
+      {
+        "date": "2026-11-17",
+        "detail": "Added Coinstancy Agentic Bank. Developer docs say the x402 v1 path is disabled by default."
       }
     ]
   },
@@ -394,9 +402,9 @@
       "title": "LangGraph overview",
       "url": "https://docs.langchain.com/oss/python/langgraph/overview"
     },
-    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp", "agentcard-opencommerce", "rain-agent-vaults", "coinbase-wallet-mcp", "kernel-agent-payments", "chatgpt-wallet"],
+    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp", "agentcard-opencommerce", "rain-agent-vaults", "coinbase-wallet-mcp", "kernel-agent-payments", "chatgpt-wallet", "coinstancy-agentic-bank"],
     "related": ["guardrail", "multi-agent", "tool-call", "spend-request", "approval-channel"],
-    "last_verified": "2026-11-16",
+    "last_verified": "2026-11-17",
     "updates": [
       {
         "date": "2026-11-05",
@@ -413,6 +421,10 @@
       {
         "date": "2026-11-16",
         "detail": "Added ChatGPT Wallet to the listings for this term."
+      },
+      {
+        "date": "2026-11-17",
+        "detail": "Added Coinstancy Agentic Bank to the listings for this term."
       }
     ]
   },
@@ -461,7 +473,7 @@
       "lexisnexis-know-your-agent"
     ],
     "related": ["agent-id", "agent-identity", "erc-8004", "kyapay", "web-bot-auth"],
-    "last_verified": "2026-11-16",
+    "last_verified": "2026-11-17",
     "updates": [
       {
         "date": "2026-11-04",
@@ -478,6 +490,10 @@
       {
         "date": "2026-11-16",
         "detail": "Added LexisNexis Know Your Agent intelligence to the listings for this term."
+      },
+      {
+        "date": "2026-11-17",
+        "detail": "Replaced the claim that Mastercard Agent Pay is not available commercially. The 20 October 2026 announcement describes Early Access."
       }
     ],
     "article": {
@@ -553,7 +569,7 @@
           ]
         },
         {
-          "text": "A spending limit is a different control from these identity checks. [[0]] is a pilot payment rail: the principal sets the limit, a service can return HTTP 402, and the agent signs a payment voucher. Mastercard opened Early Access on 2026-10-20 and says it is not available commercially.",
+          "text": "A spending limit is a different control from these identity checks. [[0]] is in Early Access: the business sets a spending limit, a service can return HTTP 402, and the agent signs a payment voucher. The 20 October 2026 announcement gives developers buyer and seller APIs, a toolkit, a sandbox, and documentation.",
           "links": [
             { "label": "Mastercard Agent Pay for Machines", "href": "/listings/mastercard-agent-pay" }
           ],
@@ -839,9 +855,9 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct", "cashfree-checkout-for-agents", "kraken", "okx-agent-trade-kit", "pacifica", "tradier", "coinbase-wallet-mcp", "binance", "bitget-agent-hub", "kalshi", "idenfy-mcp"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct", "cashfree-checkout-for-agents", "kraken", "okx-agent-trade-kit", "pacifica", "tradier", "coinbase-wallet-mcp", "binance", "bitget-agent-hub", "kalshi", "idenfy-mcp", "schwab-mcp-server", "primexbt-mcp", "coinstancy-agentic-bank"],
     "related": ["json-rpc", "personal-agent-protocol", "token-exchange", "tool-call", "ucp"],
-    "last_verified": "2026-11-13",
+    "last_verified": "2026-11-17",
     "updates": [
       {
         "date": "2026-11-04",
@@ -866,6 +882,10 @@
       {
         "date": "2026-11-13",
         "detail": "Added the iDenfy account MCP server to the listings for this term."
+      },
+      {
+        "date": "2026-11-17",
+        "detail": "Added Schwab MCP Server, PrimeXBT MCP, and Coinstancy Agentic Bank to the listings for this term."
       }
     ]
   },
@@ -1011,9 +1031,9 @@
       "title": "LiteLLM proxy budgets",
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
-    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card", "binance-agentic-wallet", "rain-agent-vaults", "coinbase-wallet-mcp", "lead-agent-account-numbers", "navoka", "stripe-issuing-for-agents"],
+    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card", "binance-agentic-wallet", "rain-agent-vaults", "coinbase-wallet-mcp", "lead-agent-account-numbers", "navoka", "stripe-issuing-for-agents", "coinstancy-agentic-bank"],
     "related": ["agent-wallet", "spend-request", "approval-channel"],
-    "last_verified": "2026-11-16",
+    "last_verified": "2026-11-17",
     "updates": [
       {
         "date": "2026-11-04",
@@ -1034,6 +1054,10 @@
       {
         "date": "2026-11-16",
         "detail": "Added Lead Agent Account Numbers, Navoka, and Stripe Issuing for agents to the listings for this term."
+      },
+      {
+        "date": "2026-11-17",
+        "detail": "Added Coinstancy Agentic Bank to the listings for this term."
       }
     ]
   },
@@ -1123,9 +1147,9 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp", "coinstancy-agentic-bank"],
     "related": ["http-402", "payment-facilitator"],
-    "last_verified": "2026-11-11",
+    "last_verified": "2026-11-17",
     "updates": [
       {
         "date": "2026-11-05",
@@ -1138,6 +1162,10 @@
       {
         "date": "2026-11-11",
         "detail": "Added Coinbase Wallet MCP to the listings for this term."
+      },
+      {
+        "date": "2026-11-17",
+        "detail": "Added Coinstancy Agentic Bank. Developer docs say the x402 v1 path is disabled by default."
       }
     ]
   },
