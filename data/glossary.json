@@ -163,9 +163,9 @@
       "title": "Tempo Wallet agent documentation",
       "url": "https://tempo.xyz/developers/docs/wallet/recipes"
     },
-    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets", "binance-agentic-wallet", "coinbase-wallet-mcp", "chatgpt-wallet", "coinstancy-agentic-bank"],
+    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets", "binance-agentic-wallet", "coinbase-wallet-mcp", "chatgpt-wallet", "coinstancy-agentic-bank", "lightspark-agent-accounts"],
     "related": ["kyapay", "machine-payments-protocol", "spend-limit", "agent-checkout"],
-    "last_verified": "2026-11-17",
+    "last_verified": "2026-11-18",
     "updates": [
       {
         "date": "2026-11-05",
@@ -182,6 +182,10 @@
       {
         "date": "2026-11-17",
         "detail": "Added Coinstancy Agentic Bank to the listings for this term."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added Lightspark Agent Accounts to the listings for this term."
       }
     ]
   },
@@ -425,7 +429,7 @@
       "title": "LangGraph overview",
       "url": "https://docs.langchain.com/oss/python/langgraph/overview"
     },
-    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp", "agentcard-opencommerce", "rain-agent-vaults", "coinbase-wallet-mcp", "kernel-agent-payments", "chatgpt-wallet", "coinstancy-agentic-bank"],
+    "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp", "agentcard-opencommerce", "rain-agent-vaults", "coinbase-wallet-mcp", "kernel-agent-payments", "chatgpt-wallet", "coinstancy-agentic-bank", "hypr-agentpass", "incode-know-your-agent", "lightspark-agent-accounts"],
     "related": ["guardrail", "multi-agent", "tool-call", "spend-request", "approval-channel", "agent-trade-limit"],
     "last_verified": "2026-11-18",
     "updates": [
@@ -452,6 +456,10 @@
       {
         "date": "2026-11-18",
         "detail": "Added agent trade limit as a related term."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added HYPR AgentPass, Incode Know Your Agent, and Lightspark Agent Accounts to the listings for this term."
       }
     ]
   },
@@ -497,10 +505,11 @@
       "x401",
       "socure-agent-intelligence",
       "sardine-know-your-human",
-      "lexisnexis-know-your-agent"
+      "lexisnexis-know-your-agent",
+      "incode-know-your-agent"
     ],
     "related": ["agent-id", "agent-identity", "erc-8004", "kyapay", "web-bot-auth"],
-    "last_verified": "2026-11-17",
+    "last_verified": "2026-11-18",
     "updates": [
       {
         "date": "2026-11-04",
@@ -521,6 +530,10 @@
       {
         "date": "2026-11-17",
         "detail": "Replaced the claim that Mastercard Agent Pay is not available commercially. The 20 October 2026 announcement describes Early Access."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added Incode Know Your Agent to the listings for this term."
       }
     ],
     "article": {
@@ -886,7 +899,7 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct", "cashfree-checkout-for-agents", "kraken", "okx-agent-trade-kit", "pacifica", "tradier", "coinbase-wallet-mcp", "binance", "bitget-agent-hub", "kalshi", "idenfy-mcp", "schwab-mcp-server", "primexbt-mcp", "coinstancy-agentic-bank", "orthogonal", "scalekit-agentkit"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct", "cashfree-checkout-for-agents", "kraken", "okx-agent-trade-kit", "pacifica", "tradier", "coinbase-wallet-mcp", "binance", "bitget-agent-hub", "kalshi", "idenfy-mcp", "schwab-mcp-server", "primexbt-mcp", "coinstancy-agentic-bank", "orthogonal", "scalekit-agentkit", "hypr-agentpass", "lightspark-agent-accounts"],
     "related": ["json-rpc", "personal-agent-protocol", "token-exchange", "tool-call", "ucp"],
     "last_verified": "2026-11-18",
     "updates": [
@@ -920,7 +933,7 @@
       },
       {
         "date": "2026-11-18",
-        "detail": "Added Orthogonal and Scalekit AgentKit to the listings for this term."
+        "detail": "Added Orthogonal, Scalekit AgentKit, HYPR AgentPass, and Lightspark Agent Accounts to the listings for this term."
       }
     ]
   },
@@ -1066,7 +1079,7 @@
       "title": "LiteLLM proxy budgets",
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
-    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card", "binance-agentic-wallet", "rain-agent-vaults", "coinbase-wallet-mcp", "lead-agent-account-numbers", "navoka", "stripe-issuing-for-agents", "coinstancy-agentic-bank"],
+    "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card", "binance-agentic-wallet", "rain-agent-vaults", "coinbase-wallet-mcp", "lead-agent-account-numbers", "navoka", "stripe-issuing-for-agents", "coinstancy-agentic-bank", "lightspark-agent-accounts"],
     "related": ["agent-wallet", "spend-request", "approval-channel", "agent-trade-limit"],
     "last_verified": "2026-11-18",
     "updates": [
@@ -1097,6 +1110,10 @@
       {
         "date": "2026-11-18",
         "detail": "Added agent trade limit as a related term."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added Lightspark Agent Accounts to the listings for this term."
       }
     ]
   },
