@@ -117,6 +117,25 @@
     ]
   },
   {
+    "slug": "agent-trade-limit",
+    "term": "Agent trade limit",
+    "question": "What is an agent trade limit?",
+    "definition": "A limit a trading venue enforces on orders an agent places, outside the agent. Coinbase for Agents documents a USD maximum per trade, a 24 hour volume limit, and an auto-stop at a portfolio loss threshold, set from the user's Coinbase account.",
+    "source": {
+      "title": "Coinbase for Agents introduces new Agent Controls, 11 November 2026",
+      "url": "https://www.coinbase.com/blog/agent-controls"
+    },
+    "listings": ["coinbase"],
+    "related": ["human-approval", "spend-limit"],
+    "last_verified": "2026-11-18",
+    "updates": [
+      {
+        "date": "2026-11-18",
+        "detail": "Term added from the Coinbase Agent Controls post of 11 November 2026."
+      }
+    ]
+  },
+  {
     "slug": "agent-marketplace",
     "term": "Agent marketplace",
     "question": "What is an agent marketplace?",
@@ -375,9 +394,9 @@
       "title": "RFC 9110, status 402 Payment Required",
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.3"
     },
-    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "circle-managed-agentic-payments", "402sentinel", "attest", "counterpartycheck", "factline-x402-pay-guard", "lumiere-paycheck", "preflight402", "coinbase-wallet-mcp", "coinstancy-agentic-bank"],
+    "listings": ["x402", "l402", "mpp", "nevermined", "tempo-wallet", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "stripe-link-cli", "mastercard-agent-pay", "px402", "payai-x402-facilitator", "kite-agent-passport", "wavelength", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "circle-managed-agentic-payments", "402sentinel", "attest", "counterpartycheck", "factline-x402-pay-guard", "lumiere-paycheck", "preflight402", "coinbase-wallet-mcp", "coinstancy-agentic-bank", "orthogonal"],
     "related": ["l402", "machine-payments-protocol", "x402"],
-    "last_verified": "2026-11-17",
+    "last_verified": "2026-11-18",
     "updates": [
       {
         "date": "2026-11-09",
@@ -390,6 +409,10 @@
       {
         "date": "2026-11-17",
         "detail": "Added Coinstancy Agentic Bank. Developer docs say the x402 v1 path is disabled by default."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added Orthogonal, which returns HTTP 402 for x402 and MPP calls, to the listings for this term."
       }
     ]
   },
@@ -403,8 +426,8 @@
       "url": "https://docs.langchain.com/oss/python/langgraph/overview"
     },
     "listings": ["langgraph", "openai-agents-sdk", "microsoft-agent-framework", "mastra", "ledger-agent-intent", "agent-vault", "walmart-agent-gateway", "mercury-mcp", "1password-for-agents", "shop-mcp", "agentcard-opencommerce", "rain-agent-vaults", "coinbase-wallet-mcp", "kernel-agent-payments", "chatgpt-wallet", "coinstancy-agentic-bank"],
-    "related": ["guardrail", "multi-agent", "tool-call", "spend-request", "approval-channel"],
-    "last_verified": "2026-11-17",
+    "related": ["guardrail", "multi-agent", "tool-call", "spend-request", "approval-channel", "agent-trade-limit"],
+    "last_verified": "2026-11-18",
     "updates": [
       {
         "date": "2026-11-05",
@@ -425,6 +448,10 @@
       {
         "date": "2026-11-17",
         "detail": "Added Coinstancy Agentic Bank to the listings for this term."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added agent trade limit as a related term."
       }
     ]
   },
@@ -837,13 +864,17 @@
       "title": "Stripe documentation for MPP",
       "url": "https://docs.stripe.com/payments/machine/mpp"
     },
-    "listings": ["mpp", "tempo-wallet", "nevermined", "circle-managed-agentic-payments"],
+    "listings": ["mpp", "tempo-wallet", "nevermined", "circle-managed-agentic-payments", "orthogonal"],
     "related": ["agent-wallet", "ap2", "http-402"],
-    "last_verified": "2026-11-09",
+    "last_verified": "2026-11-18",
     "updates": [
       {
         "date": "2026-11-09",
         "detail": "Added Circle Managed Agentic Payments to the listings for this term."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added Orthogonal, which pays per call in USDC.e on Tempo over MPP, to the listings for this term."
       }
     ]
   },
@@ -855,9 +886,9 @@
       "title": "Model Context Protocol specification",
       "url": "https://modelcontextprotocol.io/specification/2026-07-28"
     },
-    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct", "cashfree-checkout-for-agents", "kraken", "okx-agent-trade-kit", "pacifica", "tradier", "coinbase-wallet-mcp", "binance", "bitget-agent-hub", "kalshi", "idenfy-mcp", "schwab-mcp-server", "primexbt-mcp", "coinstancy-agentic-bank"],
+    "listings": ["mcp", "personal-agent-protocol", "ucp", "gensyn", "coinbase", "robinhood", "ornn", "stripe-treasury-for-agents", "walmart-agent-gateway", "webmcp", "mercury-mcp", "infisical-agent-vault", "shop-mcp", "wavelength", "visa-intelligent-commerce", "google-connected-apps-platform", "natural-direct", "cashfree-checkout-for-agents", "kraken", "okx-agent-trade-kit", "pacifica", "tradier", "coinbase-wallet-mcp", "binance", "bitget-agent-hub", "kalshi", "idenfy-mcp", "schwab-mcp-server", "primexbt-mcp", "coinstancy-agentic-bank", "orthogonal", "scalekit-agentkit"],
     "related": ["json-rpc", "personal-agent-protocol", "token-exchange", "tool-call", "ucp"],
-    "last_verified": "2026-11-17",
+    "last_verified": "2026-11-18",
     "updates": [
       {
         "date": "2026-11-04",
@@ -886,6 +917,10 @@
       {
         "date": "2026-11-17",
         "detail": "Added Schwab MCP Server, PrimeXBT MCP, and Coinstancy Agentic Bank to the listings for this term."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added Orthogonal and Scalekit AgentKit to the listings for this term."
       }
     ]
   },
@@ -1032,8 +1067,8 @@
       "url": "https://docs.litellm.ai/docs/proxy/users"
     },
     "listings": ["litellm", "tempo-wallet", "pydantic-ai", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "stripe-link-cli", "sui-agentic-payments", "walmart-agent-gateway", "shop-mcp", "agentcard-opencommerce", "visa-intelligent-commerce", "fireblocks-agentic-payments", "sunrate-agentic-card", "binance-agentic-wallet", "rain-agent-vaults", "coinbase-wallet-mcp", "lead-agent-account-numbers", "navoka", "stripe-issuing-for-agents", "coinstancy-agentic-bank"],
-    "related": ["agent-wallet", "spend-request", "approval-channel"],
-    "last_verified": "2026-11-17",
+    "related": ["agent-wallet", "spend-request", "approval-channel", "agent-trade-limit"],
+    "last_verified": "2026-11-18",
     "updates": [
       {
         "date": "2026-11-04",
@@ -1058,6 +1093,10 @@
       {
         "date": "2026-11-17",
         "detail": "Added Coinstancy Agentic Bank to the listings for this term."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added agent trade limit as a related term."
       }
     ]
   },
@@ -1147,9 +1186,9 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp", "coinstancy-agentic-bank"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp", "coinstancy-agentic-bank", "orthogonal"],
     "related": ["http-402", "payment-facilitator"],
-    "last_verified": "2026-11-17",
+    "last_verified": "2026-11-18",
     "updates": [
       {
         "date": "2026-11-05",
@@ -1166,6 +1205,10 @@
       {
         "date": "2026-11-17",
         "detail": "Added Coinstancy Agentic Bank. Developer docs say the x402 v1 path is disabled by default."
+      },
+      {
+        "date": "2026-11-18",
+        "detail": "Added Orthogonal, which pays per call in USDC on Base over x402, to the listings for this term."
       }
     ]
   },
