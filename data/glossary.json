@@ -1,5 +1,17 @@
 [
   {
+    "slug": "agent-insurance",
+    "term": "AI agent insurance",
+    "definition": "Insurance pays after a covered loss. AI liability coverage can include claims arising from AI agent actions.",
+    "source": {
+      "title": "Armilla AI insurance",
+      "url": "https://www.armilla.ai/ai-insurance"
+    },
+    "listings": ["aiuc", "armilla-ai", "cowbell-ai-liability-insurance", "harbor"],
+    "related": [],
+    "last_verified": "2026-11-23"
+  },
+  {
     "slug": "a2a",
     "term": "A2A",
     "definition": "Open protocol, hosted by the Linux Foundation, for agents to discover each other through Agent Cards and collaborate over HTTP. Requests and responses use JSON-RPC 2.0.",
@@ -163,7 +175,7 @@
       "title": "Tempo Wallet agent documentation",
       "url": "https://tempo.xyz/developers/docs/wallet/recipes"
     },
-    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets", "binance-agentic-wallet", "coinbase-wallet-mcp", "chatgpt-wallet", "coinstancy-agentic-bank", "lightspark-agent-accounts"],
+    "listings": ["tempo-wallet", "coinbase-agentic-wallet", "metamask-agent-wallet", "polygon-agent-cli", "stabletrust-api", "kite-agent-passport", "circle-agent-wallets", "binance-agentic-wallet", "coinbase-wallet-mcp", "chatgpt-wallet", "coinstancy-agentic-bank", "lightspark-agent-accounts", "visa-cli"],
     "related": ["kyapay", "machine-payments-protocol", "spend-limit", "agent-checkout"],
     "last_verified": "2026-11-18",
     "updates": [
@@ -521,7 +533,8 @@
       "sardine-know-your-human",
       "lexisnexis-know-your-agent",
       "incode-know-your-agent",
-      "agentic-mobile-protocol"
+      "agentic-mobile-protocol",
+      "visa-cli"
     ],
     "related": ["agent-id", "agent-identity", "erc-8004", "kyapay", "web-bot-auth"],
     "last_verified": "2026-11-18",
@@ -1016,7 +1029,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "payai-x402-facilitator", "fireblocks-agentic-payments", "coinbase-x402-facilitator"],
+    "listings": ["x402", "nevermined", "payai-x402-facilitator", "fireblocks-agentic-payments", "coinbase-x402-facilitator", "tempo-x402-facilitator"],
     "related": ["x402"],
     "last_verified": "2026-11-05",
     "updates": [
@@ -1218,7 +1231,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp", "coinstancy-agentic-bank", "orthogonal", "amazon-bedrock-agentcore-payments"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp", "coinstancy-agentic-bank", "orthogonal", "amazon-bedrock-agentcore-payments", "tempo-x402-facilitator"],
     "related": ["http-402", "payment-facilitator"],
     "last_verified": "2026-11-18",
     "updates": [

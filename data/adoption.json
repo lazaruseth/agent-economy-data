@@ -512,5 +512,19 @@
     "measured": "UNKNOWN",
     "notes": [],
     "checked": "2026-11-20"
+  },
+  {
+    "slug": "visa-cli",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-23"
+  },
+  {
+    "slug": "tempo-x402-facilitator",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-23"
   }
 ]
