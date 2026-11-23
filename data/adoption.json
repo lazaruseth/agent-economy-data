@@ -491,5 +491,26 @@
     "measured": "UNKNOWN",
     "notes": [],
     "checked": "2026-11-18"
+  },
+  {
+    "slug": "zinc",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-19"
+  },
+  {
+    "slug": "amazon-bedrock-agentcore-payments",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-20"
+  },
+  {
+    "slug": "agentic-mobile-protocol",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-20"
   }
 ]

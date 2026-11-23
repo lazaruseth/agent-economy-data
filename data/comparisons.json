@@ -30,5 +30,7 @@
   { "a": "binance-agentic-wallet", "b": "coinbase-agentic-wallet", "added": "2026-11-05", "description": "Binance Agentic Wallet vs Coinbase Agentic Wallet, exchange operated wallets, compared on custody, spend controls, approval, and access, checked 2026-11-05." },
   { "a": "concordium-agent-registry", "b": "space-id-agent-id", "added": "2026-11-06" },
   { "a": "circle-managed-agentic-payments", "b": "coinbase-x402-facilitator", "added": "2026-11-09", "description": "Circle Managed Agentic Payments vs Coinbase x402 Facilitator, compared on protocols, settlement, payout, pricing, and onboarding, sources checked 2026-11-09." },
-  { "a": "agentic-identity-broker", "b": "infisical-agent-vault", "added": "2026-11-13" }
+  { "a": "agentic-identity-broker", "b": "infisical-agent-vault", "added": "2026-11-13" },
+  { "a": "crossmint-agent-checkout", "b": "zinc", "added": "2026-11-19" },
+  { "a": "agentic-mobile-protocol", "b": "ap2", "added": "2026-11-20" }
 ]
