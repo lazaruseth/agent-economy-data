@@ -210,7 +210,7 @@
       "title": "Crossmint Agent Checkouts",
       "url": "https://docs.crossmint.com/agents/checkouts"
     },
-    "listings": ["agentcard-opencommerce", "crossmint-agent-checkout", "shop-mcp", "kernel-agent-payments", "chatgpt-wallet", "zinc"],
+    "listings": ["agentcard-opencommerce", "crossmint-agent-checkout", "shop-mcp", "kernel-agent-payments", "chatgpt-wallet", "zinc", "paypal-agentic-virtual-card"],
     "related": ["agent-wallet", "ucp", "spend-request", "idempotency-key"],
     "last_verified": "2026-11-16",
     "updates": [
@@ -534,7 +534,8 @@
       "lexisnexis-know-your-agent",
       "incode-know-your-agent",
       "agentic-mobile-protocol",
-      "visa-cli"
+      "visa-cli",
+      "t54-trustline"
     ],
     "related": ["agent-id", "agent-identity", "erc-8004", "kyapay", "web-bot-auth"],
     "last_verified": "2026-11-18",
@@ -1029,7 +1030,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "payai-x402-facilitator", "fireblocks-agentic-payments", "coinbase-x402-facilitator", "tempo-x402-facilitator"],
+    "listings": ["x402", "nevermined", "payai-x402-facilitator", "fireblocks-agentic-payments", "coinbase-x402-facilitator", "tempo-x402-facilitator", "t54-xrpl-x402-facilitator"],
     "related": ["x402"],
     "last_verified": "2026-11-05",
     "updates": [
@@ -1065,7 +1066,7 @@
         "url": "https://sierra.ai/blog/releasing-poppy"
       }
     ],
-    "listings": ["personal-agent-protocol", "descope-envoy"],
+    "listings": ["personal-agent-protocol", "descope-envoy", "auth0-auth-for-personal-agents"],
     "related": ["mcp", "pact"],
     "last_verified": "2026-11-16",
     "updates": [
@@ -1231,7 +1232,7 @@
       "title": "Coinbase documentation for how x402 works",
       "url": "https://docs.cdp.coinbase.com/x402/how-it-works"
     },
-    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp", "coinstancy-agentic-bank", "orthogonal", "amazon-bedrock-agentcore-payments", "tempo-x402-facilitator"],
+    "listings": ["x402", "nevermined", "coinbase-agentic-wallet", "hedera-agent-accounts", "metamask-agent-wallet", "polygon-agent-cli", "sui-agentic-payments", "mastercard-agent-pay", "concordium-agent-registry", "px402", "payai-x402-facilitator", "kite-agent-passport", "fireblocks-agentic-payments", "cloudflare-monetization-gateway", "coinbase-x402-facilitator", "binance-agentic-wallet", "circle-managed-agentic-payments", "coinbase-wallet-mcp", "coinstancy-agentic-bank", "orthogonal", "amazon-bedrock-agentcore-payments", "tempo-x402-facilitator", "t54-xrpl-x402-facilitator"],
     "related": ["http-402", "payment-facilitator"],
     "last_verified": "2026-11-18",
     "updates": [

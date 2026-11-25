@@ -526,5 +526,19 @@
     "measured": "UNKNOWN",
     "notes": [],
     "checked": "2026-11-23"
+  },
+  {
+    "slug": "t54-xrpl-x402-facilitator",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-24"
+  },
+  {
+    "slug": "paypal-agentic-virtual-card",
+    "claimed": "UNKNOWN",
+    "measured": "UNKNOWN",
+    "notes": [],
+    "checked": "2026-11-25"
   }
 ]
